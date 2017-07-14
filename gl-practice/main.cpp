@@ -14,7 +14,10 @@
 
 int main( void )  
 {  
-	return drawHelloTriangle();
-}  
+	//return drawHelloTriangleVAO();
+
+	return drawTwoTriangleEBO();
+
+}
 
 
