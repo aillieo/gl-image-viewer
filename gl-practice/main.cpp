@@ -16,7 +16,7 @@ int main( void )
 {  
 	//return drawHelloTriangleVAO();
 
-	return drawTwoTriangleEBO();
+	return drawHelloTriangleTwoShaderEBO();
 
 }
 
