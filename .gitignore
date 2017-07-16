@@ -6,13 +6,13 @@
 
 *.suo
 
-Debug/*
+proj.win32/Debug/*
 
-Release/*
+proj.win32/Release/*
 
-gl-practice/Debug/*
+proj.win32/gl-practice/Debug/*
 
-gl-practice/Release/*
+proj.win32/gl-practice/Release/*
 
 
 #xcode
