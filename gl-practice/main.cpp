@@ -9,7 +9,7 @@
 #include <GLFW/glfw3.h>  
 #include <iostream>
 
-#include "HelloTriangle.h"
+#include "PracticeCode/HelloTriangle.h"
 
 
 int main( void )  

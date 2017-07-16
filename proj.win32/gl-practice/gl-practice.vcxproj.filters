@@ -13,18 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\PracticeCode">
+      <UniqueIdentifier>{c7d77e6d-6373-4b55-a056-79d26813b5fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{7a32a2ee-e5bc-486e-acf1-bf64cd74397d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\gl-practice\HelloTriangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gl-practice\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\gl-practice\HelloTriangle.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h">
+      <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
