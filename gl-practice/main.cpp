@@ -1,5 +1,5 @@
-#include <windows.h>
-#include <math.h>
+//#include <windows.h>
+//#include <math.h>
 
  
 #include <stdio.h>  
@@ -12,12 +12,11 @@
 #include "PracticeCode/HelloTriangle.h"
 
 
-int main( void )  
+int main()  
 {  
 	//return drawHelloTriangleVAO();
 
 	return drawHelloTriangleTwoShaderEBO();
-
 }
 
 
