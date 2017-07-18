@@ -1,3 +1,4 @@
+#pragma once
 
 // 绘制一个三角形
 int drawHelloTriangleVAO();

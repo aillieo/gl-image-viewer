@@ -12,11 +12,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\gl-practice\main.cpp" />
-    <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
