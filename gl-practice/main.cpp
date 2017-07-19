@@ -4,9 +4,9 @@
 
 int main()  
 {  
-	return drawHelloTriangleVAO();
+	//return colorFromVSH();
 
-	//return useShaderClass();
+	return colorFromVSH();
 }
 
 

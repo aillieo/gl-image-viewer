@@ -2,6 +2,9 @@
 
 Shader::Shader(const GLchar* vertexPath, const GLchar* fragmentPath)
 {
+
+	const char* shaderPath = "../../gl-practice/_shaders/";
+
 	// 1. retrieve the vertex/fragment source code from filePath
 	std::string vertexCode;
 	std::string fragmentCode;
@@ -12,9 +15,13 @@ Shader::Shader(const GLchar* vertexPath, const GLchar* fragmentPath)
 	fShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
 	try 
 	{
+		std::stringstream vShPath,fShPath;
+		vShPath<<shaderPath<<vertexPath;
+		fShPath<<shaderPath<<fragmentPath;
+
 		// open files
-		vShaderFile.open(vertexPath);
-		fShaderFile.open(fragmentPath);
+		vShaderFile.open(vShPath.str().c_str());
+		fShaderFile.open(fShPath.str().c_str());
 		std::stringstream vShaderStream, fShaderStream;
 		// read file's buffer contents into streams
 		vShaderStream << vShaderFile.rdbuf();
