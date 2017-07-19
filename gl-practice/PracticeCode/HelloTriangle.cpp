@@ -1,3 +1,5 @@
+#include "../Utils/GLMethod.h"
+
 #ifdef WIN32
 #include <windows.h>
 #elif __APPLE__
@@ -5,12 +7,8 @@
 #endif
 #include <math.h>
 
-
 #include <stdio.h>  
-#include <stdlib.h>  
-
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>  
+#include <stdlib.h>
 #include <iostream>
 
 #include "HelloTriangle.h"
@@ -39,43 +37,6 @@ const char *fragmentShaderSourceBlue = "#version 330 core\n"
 
 GLFWwindow* window;  
 
-void processInput(GLFWwindow *window)
-{
-	if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-}
-
-int initWindow()
-{
-	if(!glfwInit())  
-		return -1;  
-
-	glfwWindowHint(GLFW_SAMPLES,4);  
-	glfwWindowHint(GLFW_RESIZABLE,GL_FALSE);  
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);  
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);  
-	glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);  
-
-    
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
-#endif
-    
-	window = glfwCreateWindow(1024,768,"Test OpenGL config",NULL,NULL);  
-	if (!window)  
-	{  
-		glfwTerminate();  
-		return -1;  
-	}  
-
-	glfwMakeContextCurrent(window);  
-
-	if(glewInit() != GLEW_OK)  
-		return -1;  
-
-
-	return 0;
-}
 
 int prepareShaders(const char* vsh, const char* fsh)
 {
@@ -129,7 +90,8 @@ int prepareShaders(const char* vsh, const char* fsh)
 int drawHelloTriangleVAO()
 {
 
-		if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}
@@ -207,11 +169,11 @@ int drawHelloTriangleVAO()
 int drawTwoTriangleNoEBO()
 {
 
-		if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}
-	//Sleep(1000);
 
 	float vertices[] = {
 
@@ -293,11 +255,11 @@ int drawTwoTriangleEBO()
 {
 
 
-	if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}
-	//Sleep(1000);
 
 
 
@@ -385,11 +347,11 @@ int drawTwoTriangleEBO()
 int drawTwoTriangleTwoVAO()
 {
 	
-	if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}
-	//Sleep(1000);
 
 
 
@@ -480,11 +442,11 @@ int drawTwoTriangleTwoVAO()
 
 int drawHelloTriangleTwoShader()
 {
-		if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}
-	//Sleep(1000);
 
 
 
@@ -576,7 +538,8 @@ int drawHelloTriangleTwoShader()
 int drawHelloTriangleTwoShaderEBO()
 {
 	
-	if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}

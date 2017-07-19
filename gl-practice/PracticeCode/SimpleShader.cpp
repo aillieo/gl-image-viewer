@@ -5,63 +5,22 @@
 #elif __APPLE__
 
 #endif
-#include <math.h>
 
+#include <math.h>
 
 #include <stdio.h>  
 #include <stdlib.h>  
 
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>  
 #include <iostream>
 
 #include "../Utils/Shader.h"
+#include "../Utils/GLMethod.h"
 
-
-GLFWwindow* window;  
-
-void processInput(GLFWwindow *window)
-{
-	if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-}
-
-int initWindow()
-{
-	if(!glfwInit())  
-		return -1;  
-
-	glfwWindowHint(GLFW_SAMPLES,4);  
-	glfwWindowHint(GLFW_RESIZABLE,GL_FALSE);  
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);  
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);  
-	glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);  
-
-
-#ifdef __APPLE__
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
-#endif
-
-	window = glfwCreateWindow(1024,768,"Test OpenGL config",NULL,NULL);  
-	if (!window)  
-	{  
-		glfwTerminate();  
-		return -1;  
-	}  
-
-	glfwMakeContextCurrent(window);  
-
-	if(glewInit() != GLEW_OK)  
-		return -1;  
-
-
-	return 0;
-}
 
 int useShaderClass()
 {
-
-	if(0 != initWindow())
+	GLFWwindow* window = createWindow();  
+	if(nullptr == window)
 	{
 		return -1;
 	}

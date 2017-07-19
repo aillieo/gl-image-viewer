@@ -30,12 +30,24 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\Utils\GLMethod.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
       <Filter>Source Files\Utils</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\Utils\GLMethod.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h">
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>
