@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */; };
 		2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A821F1BABBD00BFF395 /* main.cpp */; };
-		2F6F2A8A1F1BABBD00BFF395 /* HelloTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A841F1BABBD00BFF395 /* HelloTriangle.cpp */; };
 		2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A871F1BABBD00BFF395 /* Shader.cpp */; };
 		2F6F2A8D1F1BAEA300BFF395 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */; };
 		2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */; };
@@ -28,12 +28,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleShader.cpp; sourceTree = "<group>"; };
+		2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleShader.h; sourceTree = "<group>"; };
 		2F6F2A501F1B99F500BFF395 /* gl-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gl-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6F2A6F1F1BA6A300BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../ENVIRONMENT/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		2F6F2A711F1BA6BD00BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../ENVIRONMENT/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A821F1BABBD00BFF395 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../gl-practice/main.cpp"; sourceTree = "<group>"; };
-		2F6F2A841F1BABBD00BFF395 /* HelloTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangle.cpp; sourceTree = "<group>"; };
-		2F6F2A851F1BABBD00BFF395 /* HelloTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTriangle.h; sourceTree = "<group>"; };
 		2F6F2A871F1BABBD00BFF395 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		2F6F2A881F1BABBD00BFF395 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -89,8 +89,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F2A841F1BABBD00BFF395 /* HelloTriangle.cpp */,
-				2F6F2A851F1BABBD00BFF395 /* HelloTriangle.h */,
+				2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */,
+				2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */,
 			);
 			name = PracticeCode;
 			path = "../../gl-practice/PracticeCode";
@@ -164,8 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6F2A8A1F1BABBD00BFF395 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
+				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
 				2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
