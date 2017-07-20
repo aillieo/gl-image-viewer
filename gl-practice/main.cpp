@@ -4,9 +4,9 @@
 
 int main()  
 {  
-	//return colorFromVSH();
+	return triangleColorVBO();
 
-	return changeColorByUniform();
+	//return changeColorByUniform();
 }
 
 
