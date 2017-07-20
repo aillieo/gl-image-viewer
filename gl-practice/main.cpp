@@ -6,7 +6,7 @@ int main()
 {  
 	//return colorFromVSH();
 
-	return colorFromVSH();
+	return changeColorByUniform();
 }
 
 

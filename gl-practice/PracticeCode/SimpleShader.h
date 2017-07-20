@@ -7,4 +7,5 @@ int useShaderClass();
 // vsh输出颜色
 int colorFromVSH();
 
-
+// 变色
+int changeColorByUniform();
