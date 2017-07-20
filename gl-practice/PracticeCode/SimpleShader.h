@@ -9,3 +9,8 @@ int colorFromVSH();
 
 // 变色
 int changeColorByUniform();
+
+// 变位置
+int changePosByUniform();
+
+
