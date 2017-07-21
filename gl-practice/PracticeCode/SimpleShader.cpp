@@ -25,7 +25,7 @@ int useShaderClass()
 		return -1;
 	}
 
-	Shader* shader = new Shader("shader1.vsh","shader1.fsh");
+	Shader* shader = new Shader("SimpleShader/shader1.vsh","SimpleShader/shader1.fsh");
 
 
 	// triangle vertex array
@@ -107,7 +107,7 @@ int colorFromVSH()
 		return -1;
 	}
 
-	Shader* shader = new Shader("shader2.vsh","shader2.fsh");
+	Shader* shader = new Shader("SimpleShader/shader2.vsh","SimpleShader/shader2.fsh");
 
 
 	// triangle vertex array
@@ -185,7 +185,7 @@ int changeColorByUniform()
 		return -1;
 	}
 
-	Shader* shader = new Shader("shader3.vsh","shader3.fsh");
+	Shader* shader = new Shader("SimpleShader/shader3.vsh","SimpleShader/shader3.fsh");
 
 
 	// triangle vertex array
@@ -273,7 +273,7 @@ int changePosByUniform()
 		return -1;
 	}
 
-	Shader* shader = new Shader("shader4.vsh","shader4.fsh");
+	Shader* shader = new Shader("SimpleShader/shader4.vsh","SimpleShader/shader4.fsh");
 
 
 	// triangle vertex array
@@ -361,7 +361,7 @@ int triangleColorVBO()
 		return -1;
 	}
 
-	Shader* shader = new Shader("shader5.vsh","shader5.fsh");
+	Shader* shader = new Shader("SimpleShader/shader5.vsh","SimpleShader/shader5.fsh");
 
 
 	// x, y, z, r, g, b

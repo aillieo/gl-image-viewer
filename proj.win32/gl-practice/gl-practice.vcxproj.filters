@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Utils">
       <UniqueIdentifier>{7a32a2ee-e5bc-486e-acf1-bf64cd74397d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\3rdParty">
+      <UniqueIdentifier>{941316cb-b645-4729-8b94-cbf8c5e85122}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\gl-practice\main.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -49,6 +55,12 @@
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h">
       <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\3rdParty\stb_image.h">
+      <Filter>Source Files\3rdParty</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

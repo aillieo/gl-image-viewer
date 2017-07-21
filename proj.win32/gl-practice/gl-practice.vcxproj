@@ -14,12 +14,15 @@
     <ClCompile Include="..\..\gl-practice\main.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\GLMethod.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\gl-practice\3rdParty\stb_image.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h" />
     <ClInclude Include="..\..\gl-practice\Utils\GLMethod.h" />
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h" />
   </ItemGroup>
