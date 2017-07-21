@@ -1,6 +1,6 @@
 #include "GLMethod.h"
 
-GLFWwindow* createWindow()
+GLFWwindow* createWindow(int width, int height)
 {
 	if(!glfwInit())  
 		return nullptr;  
@@ -16,7 +16,7 @@ GLFWwindow* createWindow()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
 #endif
 
-	GLFWwindow* window = glfwCreateWindow(1024,768,"Test OpenGL config",NULL,NULL);  
+	GLFWwindow* window = glfwCreateWindow(width,height,"Test OpenGL config",NULL,NULL);  
 	if (!window)  
 	{  
 		glfwTerminate();  
@@ -44,4 +44,10 @@ void processInput(GLFWwindow *window)
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
+}
+
+
+GLFWwindow* createWindow()
+{
+	return createWindow(1024,768);
 }

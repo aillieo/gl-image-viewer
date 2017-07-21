@@ -6,6 +6,8 @@
 
 GLFWwindow* createWindow();
 
+GLFWwindow* createWindow(int width, int height);
+
 void processInput(GLFWwindow *window);
 
 

@@ -5,7 +5,7 @@
 
 int main()  
 {  
-	return textureForTriangle();
+	return displayImage();
 
 	//return changeColorByUniform();
 }
