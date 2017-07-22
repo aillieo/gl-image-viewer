@@ -10,3 +10,11 @@ int displayImage();
 
 // gray
 int grayImage();
+
+
+// 带颜色的四个图片
+int fourImages();
+
+
+// 两张纹理混合
+int twoTextureMix();

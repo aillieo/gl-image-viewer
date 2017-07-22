@@ -5,9 +5,9 @@
 
 int main()  
 {  
-	return grayImage();
+	//return fourImages();
 
-	//return changeColorByUniform();
+	return twoTextureMix();
 }
 
 

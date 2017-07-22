@@ -13,6 +13,9 @@
 		2F6F2A8D1F1BAEA300BFF395 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */; };
 		2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */; };
 		2F6F2A931F1BB35000BFF395 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */; };
+		2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */; };
+		2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */; };
+		2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +42,12 @@
 		2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = lib/libglfw/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangle.cpp; sourceTree = "<group>"; };
+		2FE7E6C71F2376C50033C7B6 /* HelloTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTriangle.h; sourceTree = "<group>"; };
+		2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTexture.cpp; sourceTree = "<group>"; };
+		2FE7E6C91F2376C50033C7B6 /* SimpleTexture.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTexture.h; sourceTree = "<group>"; };
+		2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLMethod.cpp; sourceTree = "<group>"; };
+		2FE7E6CD1F2376DC0033C7B6 /* GLMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMethod.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,10 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */,
+				2FE7E6C71F2376C50033C7B6 /* HelloTriangle.h */,
+				2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */,
+				2FE7E6C91F2376C50033C7B6 /* SimpleTexture.h */,
 				2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */,
 				2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */,
 			);
@@ -99,6 +112,8 @@
 		2F6F2A861F1BABBD00BFF395 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */,
+				2FE7E6CD1F2376DC0033C7B6 /* GLMethod.h */,
 				2F6F2A871F1BABBD00BFF395 /* Shader.cpp */,
 				2F6F2A881F1BABBD00BFF395 /* Shader.h */,
 			);
@@ -164,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */,
+				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
 				2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */,
+				2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
