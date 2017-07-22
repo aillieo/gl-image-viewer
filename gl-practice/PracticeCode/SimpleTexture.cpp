@@ -706,3 +706,186 @@ int twoTextureMix()
     return 0; 
     
 }
+
+
+
+int magnifyTextures()
+{
+    GLFWwindow* window = createWindow();
+    if(nullptr == window)
+    {
+        return -1;
+    }
+    
+    
+    // TEXTURE !!!
+    unsigned int texture[2];
+    glGenTextures(1, texture);
+    
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, texture[0]); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
+    // set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    // set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    // load image, create texture and generate mipmaps
+    int width, height, nrChannels;
+    unsigned char *data = stbi_load("../../gl-practice/_textures/dog_mini.png", &width, &height, &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
+    
+    
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, texture[1]); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
+    // set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    // set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // load image, create texture and generate mipmaps
+    data = stbi_load("../../gl-practice/_textures/dog_mini.png", &width, &height, &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
+    
+    
+    // SHADER
+    Shader* shader = new Shader("SimpleTexture/shader1.vsh","SimpleTexture/shader1.fsh");
+
+    
+    
+    
+    // VERTICES:
+    // x, y, z, s, t
+    float vertices[] = {
+        -1.0, 1.0, 0.0f, 0.0f, 0.0f, // left top
+        1.0, 1.0, 0.0f,  1.0f, 0.0f, // right top
+        -1.0, -1.0, 0.0f,  0.0f, 1.0f, // left down
+        1.0, -1.0, 0.0f,  1.0f, 1.0f // right down
+    };
+    
+    unsigned int indices[] = {
+        0, 1, 2,
+        1, 2, 3
+    };
+    
+    
+    
+    // bind VAO VBO EBO
+    unsigned int VBO, VAO[2], EBO[2];
+    
+    glGenVertexArrays(2, VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(2, EBO);
+
+    
+    glBindVertexArray(VAO[0]);
+    
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO[0]);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices)/2, indices, GL_STATIC_DRAW);
+    
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+    
+    
+    
+    
+    
+    glBindVertexArray(VAO[1]);
+    
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO[1]);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices)/2, indices +3, GL_STATIC_DRAW);
+    
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+    
+    
+    
+    
+    
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    
+    glBindVertexArray(0);
+    
+    
+    
+    
+    
+    
+    
+    
+    // 渲染循环
+    while(!glfwWindowShouldClose(window))
+    {
+        // 输入
+        processInput(window);
+        
+        // 渲染指令
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        
+        // draw triangle
+        
+        shader->use();
+        glActiveTexture(GL_TEXTURE0);
+        shader->setInt("uTexture", 0);
+        
+        
+        glBindTexture(GL_TEXTURE_2D, texture[0]);
+        glBindVertexArray(VAO[0]);
+        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
+        
+        
+        
+        shader->use();
+        glActiveTexture(GL_TEXTURE1);
+        shader->setInt("uTexture", 1);
+        glBindTexture(GL_TEXTURE_2D, texture[1]);
+        glBindVertexArray(VAO[1]);
+        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
+        
+        
+        // 检查并调用事件，交换缓冲
+        glfwPollEvents();
+        glfwSwapBuffers(window);
+    }
+    
+    
+    glDeleteVertexArrays(2, VAO);
+    glDeleteBuffers(1, &VBO);
+    
+    delete shader;
+    
+    glfwTerminate();
+    return 0;
+
+}
+

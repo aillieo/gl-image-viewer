@@ -5,9 +5,9 @@
 
 int main()  
 {  
-	//return fourImages();
+	return magnifyTextures();
 
-	return twoTextureMix();
+	//return twoTextureMix();
 }
 
 

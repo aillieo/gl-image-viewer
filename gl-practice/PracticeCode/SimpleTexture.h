@@ -18,3 +18,8 @@ int fourImages();
 
 // 两张纹理混合
 int twoTextureMix();
+
+
+// 两种不同采样方式放大
+int magnifyTextures();
+
