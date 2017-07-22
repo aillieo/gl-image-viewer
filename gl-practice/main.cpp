@@ -5,7 +5,7 @@
 
 int main()  
 {  
-	return displayImage();
+	return grayImage();
 
 	//return changeColorByUniform();
 }

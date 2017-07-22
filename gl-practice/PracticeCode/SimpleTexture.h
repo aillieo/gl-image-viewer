@@ -6,3 +6,7 @@ int textureForTriangle();
 
 // ÏÔÊ¾Í¼Æ¬
 int displayImage();
+
+
+// gray
+int grayImage();
