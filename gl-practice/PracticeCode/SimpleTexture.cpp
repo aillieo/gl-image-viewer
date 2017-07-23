@@ -1,4 +1,4 @@
-#include "SimpleShader.h"
+#include "SimpleTexture.h"
 
 #ifdef WIN32
 #include <windows.h>
@@ -16,8 +16,7 @@
 #include "../Utils/Shader.h"
 #include "../Utils/GLMethod.h"
 
-#define STB_IMAGE_IMPLEMENTATION
-#include "../3rdParty/stb_image.h"
+#include "../Utils/TextureLoader.h"
 
 
 int textureForTriangle()
@@ -82,7 +81,7 @@ int textureForTriangle()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	// load image, create texture and generate mipmaps
 	int width, height, nrChannels;
-	unsigned char *data = stbi_load("../../gl-practice/_textures/doge.png", &width, &height, &nrChannels, 0);
+	unsigned char *data = TextureLoader::loadTexture("doge.png", &width, &height, &nrChannels, 0);
 	if (data)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -92,7 +91,7 @@ int textureForTriangle()
 	{
 		std::cout << "Failed to load texture" << std::endl;
 	}
-	stbi_image_free(data);
+	TextureLoader::freeData(data);
 
 
 
@@ -165,7 +164,7 @@ int displayImage()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	// load image, create texture and generate mipmaps
 	int width, height, nrChannels;
-	unsigned char *data = stbi_load("../../gl-practice/_textures/doge.png", &width, &height, &nrChannels, 0);
+	unsigned char *data = TextureLoader::loadTexture("doge.png", &width, &height, &nrChannels, 0);
 	if (data)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -175,7 +174,7 @@ int displayImage()
 	{
 		std::cout << "Failed to load texture" << std::endl;
 	}
-	stbi_image_free(data);
+	TextureLoader::freeData(data);
 
 
 
@@ -297,7 +296,7 @@ int grayImage()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	// load image, create texture and generate mipmaps
 	int width, height, nrChannels;
-	unsigned char *data = stbi_load("../../gl-practice/_textures/doge.png", &width, &height, &nrChannels, 0);
+	unsigned char *data = TextureLoader::loadTexture("doge.png", &width, &height, &nrChannels, 0);
 	if (data)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -307,7 +306,7 @@ int grayImage()
 	{
 		std::cout << "Failed to load texture" << std::endl;
 	}
-	stbi_image_free(data);
+	TextureLoader::freeData(data);
 
 
 
@@ -430,7 +429,7 @@ int fourImages()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // load image, create texture and generate mipmaps
     int width, height, nrChannels;
-    unsigned char *data = stbi_load("../../gl-practice/_textures/dog.png", &width, &height, &nrChannels, 0);
+    unsigned char *data = TextureLoader::loadTexture("dog.png", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -440,7 +439,7 @@ int fourImages()
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(data);
+    TextureLoader::freeData(data);
     
     
     
@@ -567,7 +566,7 @@ int twoTextureMix()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // load image, create texture and generate mipmaps
     int width, height, nrChannels;
-    unsigned char *data = stbi_load("../../gl-practice/_textures/doge.png", &width, &height, &nrChannels, 0);
+    unsigned char *data = TextureLoader::loadTexture("doge.png", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -577,7 +576,7 @@ int twoTextureMix()
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(data);
+    TextureLoader::freeData(data);
     
     
     glActiveTexture(GL_TEXTURE1);
@@ -589,7 +588,7 @@ int twoTextureMix()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // load image, create texture and generate mipmaps
-    data = stbi_load("../../gl-practice/_textures/dog.png", &width, &height, &nrChannels, 0);
+    data = TextureLoader::loadTexture("dog.png", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -599,7 +598,7 @@ int twoTextureMix()
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(data);
+    TextureLoader::freeData(data);
     
     
     // SHADER
@@ -732,7 +731,7 @@ int magnifyTextures()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     // load image, create texture and generate mipmaps
     int width, height, nrChannels;
-    unsigned char *data = stbi_load("../../gl-practice/_textures/dog_mini.png", &width, &height, &nrChannels, 0);
+    unsigned char *data = TextureLoader::loadTexture("dog_mini.png", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -742,7 +741,7 @@ int magnifyTextures()
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(data);
+    TextureLoader::freeData(data);
     
     
     glActiveTexture(GL_TEXTURE1);
@@ -754,7 +753,7 @@ int magnifyTextures()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // load image, create texture and generate mipmaps
-    data = stbi_load("../../gl-practice/_textures/dog_mini.png", &width, &height, &nrChannels, 0);
+    data = TextureLoader::loadTexture("dog_mini.png", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -764,7 +763,7 @@ int magnifyTextures()
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(data);
+    TextureLoader::freeData(data);
     
     
     // SHADER

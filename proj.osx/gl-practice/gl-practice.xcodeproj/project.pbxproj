@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0774C61F24CF5F00D5F003 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F0774C41F24CF5F00D5F003 /* TextureLoader.cpp */; };
 		2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */; };
 		2F5772A61F238DA6001F124E /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5771BA1F238DA6001F124E /* glm.cpp */; };
 		2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A821F1BABBD00BFF395 /* main.cpp */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F0774C41F24CF5F00D5F003 /* TextureLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureLoader.cpp; sourceTree = "<group>"; };
+		2F0774C51F24CF5F00D5F003 /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
 		2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleShader.cpp; sourceTree = "<group>"; };
 		2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleShader.h; sourceTree = "<group>"; };
 		2F5771981F238DA6001F124E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
@@ -690,6 +693,8 @@
 		2F6F2A861F1BABBD00BFF395 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2F0774C41F24CF5F00D5F003 /* TextureLoader.cpp */,
+				2F0774C51F24CF5F00D5F003 /* TextureLoader.h */,
 				2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */,
 				2FE7E6CD1F2376DC0033C7B6 /* GLMethod.h */,
 				2F6F2A871F1BABBD00BFF395 /* Shader.cpp */,
@@ -759,6 +764,7 @@
 			files = (
 				2F5772A61F238DA6001F124E /* glm.cpp in Sources */,
 				2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */,
+				2F0774C61F24CF5F00D5F003 /* TextureLoader.cpp in Sources */,
 				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
