@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F0774C61F24CF5F00D5F003 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F0774C41F24CF5F00D5F003 /* TextureLoader.cpp */; };
+		2F0774C91F24D2F400D5F003 /* SimpleTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F0774C71F24D2F400D5F003 /* SimpleTransform.cpp */; };
 		2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */; };
 		2F5772A61F238DA6001F124E /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5771BA1F238DA6001F124E /* glm.cpp */; };
 		2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A821F1BABBD00BFF395 /* main.cpp */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		2F0774C41F24CF5F00D5F003 /* TextureLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureLoader.cpp; sourceTree = "<group>"; };
 		2F0774C51F24CF5F00D5F003 /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
+		2F0774C71F24D2F400D5F003 /* SimpleTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform.cpp; sourceTree = "<group>"; };
+		2F0774C81F24D2F400D5F003 /* SimpleTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTransform.h; sourceTree = "<group>"; };
 		2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleShader.cpp; sourceTree = "<group>"; };
 		2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleShader.h; sourceTree = "<group>"; };
 		2F5771981F238DA6001F124E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
@@ -679,6 +682,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F0774C71F24D2F400D5F003 /* SimpleTransform.cpp */,
+				2F0774C81F24D2F400D5F003 /* SimpleTransform.h */,
 				2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */,
 				2FE7E6C71F2376C50033C7B6 /* HelloTriangle.h */,
 				2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */,
@@ -762,6 +767,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0774C91F24D2F400D5F003 /* SimpleTransform.cpp in Sources */,
 				2F5772A61F238DA6001F124E /* glm.cpp in Sources */,
 				2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */,
 				2F0774C61F24CF5F00D5F003 /* TextureLoader.cpp in Sources */,
