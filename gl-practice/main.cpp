@@ -5,6 +5,7 @@
 #include "PracticeCode/SimpleShader.h"
 #include "PracticeCode/SimpleTexture.h"
 #include "PracticeCode/SimpleTransform.h"
+#include "PracticeCode/SimpleTransform3D.h"
 
 
 int main()  
@@ -17,7 +18,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 18;
+	SceneManager::sceneIndexMax = 19;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -102,6 +103,10 @@ int main()
 		case 18:
 			// 平移缩放旋转
 			moveScaleRotate(window);
+			break;
+		case 19:
+			// 平移缩放旋转
+			box3D(window);
 			break;
 		default:
 			break;

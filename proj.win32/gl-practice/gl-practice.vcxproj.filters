@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\gl-practice\SceneManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -526,6 +529,9 @@
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\SceneManager.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.h">
+      <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
