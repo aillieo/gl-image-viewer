@@ -17,8 +17,8 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 17;
-
+	SceneManager::sceneIndexMax = 18;
+	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -98,7 +98,11 @@ int main()
 		case 17:
 			// 平面内旋转
 			rotate2D(window);
-				break;
+			break;
+		case 18:
+			// 平移缩放旋转
+			moveScaleRotate(window);
+			break;
 		default:
 			break;
 		}
