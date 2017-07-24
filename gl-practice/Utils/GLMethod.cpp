@@ -1,5 +1,5 @@
 #include "GLMethod.h"
-#include "..\SceneManager.h"
+#include "../SceneManager.h"
 
 int LastPressedKey = 0;
 
