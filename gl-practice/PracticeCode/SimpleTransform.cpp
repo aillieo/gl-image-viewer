@@ -107,20 +107,19 @@ int rotate2D()
     
     
     
-    // æ¸²æŸ“å¾ªç¯
+    // äÖÈ¾Ñ­»·
     while(!glfwWindowShouldClose(window))
     {
-        // è¾“å…¥
+        // ÊäÈë
         processInput(window);
         
-        // æ¸²æŸ“æŒ‡ä»¤
+        // äÖÈ¾Ö¸Áî
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
         
         
         unsigned int transformLoc = glGetUniformLocation(shader->ID, "transform");
-        glm::mat4 trans;
         glm::mat4 transform;
         transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
@@ -135,7 +134,7 @@ int rotate2D()
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         
         
-        // æ£€æŸ¥å¹¶è°ƒç”¨äº‹ä»¶ï¼Œäº¤æ¢ç¼“å†²
+        // ¼ì²é²¢µ÷ÓÃÊÂ¼ş£¬½»»»»º³å
         glfwPollEvents();
         glfwSwapBuffers(window);
     }
