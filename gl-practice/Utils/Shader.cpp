@@ -90,6 +90,11 @@ void Shader::setMat4(const std::string &name, GLsizei count, GLboolean transpose
 	glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), count, transpose, value);
 }
 
+void Shader::setMat4(const std::string &name, const GLfloat* value) const
+{
+    return Shader::setMat4( name, 1, GL_FALSE, value);
+}
+
 void Shader::checkCompileErrors(unsigned int shader, std::string type)
 {
 	int success;

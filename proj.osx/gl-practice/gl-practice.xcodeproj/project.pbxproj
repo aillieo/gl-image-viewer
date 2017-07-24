@@ -309,14 +309,14 @@
 		2F6F2A501F1B99F500BFF395 /* gl-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gl-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6F2A6F1F1BA6A300BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../ENVIRONMENT/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		2F6F2A711F1BA6BD00BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../ENVIRONMENT/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
-		2F6F2A821F1BABBD00BFF395 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../gl-practice/main.cpp"; sourceTree = "<group>"; };
+		2F6F2A821F1BABBD00BFF395 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../gl-practice/main.cpp"; sourceTree = "<group>"; };
 		2F6F2A871F1BABBD00BFF395 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		2F6F2A881F1BABBD00BFF395 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = lib/libglfw/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
-		2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform3D.cpp; sourceTree = "<group>"; };
-		2FE046021F2628F10067E589 /* SimpleTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTransform3D.h; sourceTree = "<group>"; };
+		2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform3D.cpp; sourceTree = "<group>"; };
+		2FE046021F2628F10067E589 /* SimpleTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTransform3D.h; sourceTree = "<group>"; };
 		2FE046041F2629080067E589 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = "../../gl-practice/SceneManager.cpp"; sourceTree = "<group>"; };
 		2FE046051F2629080067E589 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = "../../gl-practice/SceneManager.h"; sourceTree = "<group>"; };
 		2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangle.cpp; sourceTree = "<group>"; };

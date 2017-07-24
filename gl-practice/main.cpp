@@ -18,7 +18,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 19;
+	SceneManager::sceneIndexMax = 20;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -108,6 +108,11 @@ int main()
 			// 平移缩放旋转
 			box3D(window);
 			break;
+            case 20:
+            // 多个空间旋转
+            rotate3DMulti(window);
+            break;
+
 		default:
 			break;
 		}
