@@ -1,18 +1,19 @@
 #pragma once
 
+#include "../Utils/GLMethod.h"
 
 // 使用Shader类
-int useShaderClass();
+int useShaderClass(GLFWwindow* window);
 
 // vsh输出颜色
-int colorFromVSH();
+int colorFromVSH(GLFWwindow* window);
 
 // 变色
-int changeColorByUniform();
+int changeColorByUniform(GLFWwindow* window);
 
 // 变位置
-int changePosByUniform();
+int changePosByUniform(GLFWwindow* window);
 
 // 向VBO写入颜色
-int triangleColorVBO();
+int triangleColorVBO(GLFWwindow* window);
 

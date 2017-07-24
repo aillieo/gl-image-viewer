@@ -17,17 +17,11 @@
 #include "../Utils/GLMethod.h"
 
 #include "../Utils/TextureLoader.h"
+#include "../SceneManager.h"
 
-int rotate2D()
+int rotate2D(GLFWwindow* window)
 {
-    
-    GLFWwindow* window = createWindow();
-    if(nullptr == window)
-    {
-        return -1;
-    }
-        
-    
+
     // TEXTURE !!!
     unsigned int texture;
     glGenTextures(1, &texture);
@@ -108,7 +102,7 @@ int rotate2D()
     
     
     // ‰÷»æ—≠ª∑
-    while(!glfwWindowShouldClose(window))
+    while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
     {
         //  ‰»Î
         processInput(window);
@@ -145,7 +139,17 @@ int rotate2D()
     
     delete shader;
     
-    glfwTerminate();  
     return 0; 
     
 }
+
+
+
+
+int moveScaleRotate()
+{
+
+
+	return 0;
+}
+

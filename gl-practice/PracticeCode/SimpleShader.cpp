@@ -15,15 +15,11 @@
 
 #include "../Utils/Shader.h"
 #include "../Utils/GLMethod.h"
+#include "../SceneManager.h"
 
 
-int useShaderClass()
+int useShaderClass(GLFWwindow* window)
 {
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	Shader* shader = new Shader("SimpleShader/shader1.vsh","SimpleShader/shader1.fsh");
 
@@ -62,7 +58,7 @@ int useShaderClass()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -89,7 +85,7 @@ int useShaderClass()
 
 	delete shader;
 
-	glfwTerminate();  
+	  
 	return 0; 
 
 
@@ -98,14 +94,9 @@ int useShaderClass()
 
 
 
-int colorFromVSH()
+int colorFromVSH(GLFWwindow* window)
 {
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	Shader* shader = new Shader("SimpleShader/shader2.vsh","SimpleShader/shader2.fsh");
 
@@ -144,7 +135,7 @@ int colorFromVSH()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -171,19 +162,14 @@ int colorFromVSH()
 
 	delete shader;
 
-	glfwTerminate();  
+	  
 	return 0; 
 
 }
 
 
-int changeColorByUniform()
+int changeColorByUniform(GLFWwindow* window)
 {
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	Shader* shader = new Shader("SimpleShader/shader3.vsh","SimpleShader/shader3.fsh");
 
@@ -222,7 +208,7 @@ int changeColorByUniform()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -236,7 +222,7 @@ int changeColorByUniform()
 
 
 		// uniform…Ë÷√—’…´
-		float timeValue = glfwGetTime();
+		float timeValue = (float)glfwGetTime();
 		float colorValue = sin(timeValue) / 2.0f + 0.5f;
 		shader->setFloat("red", 1 - colorValue);
 		shader->setFloat("blue", colorValue);
@@ -257,21 +243,16 @@ int changeColorByUniform()
 
 	delete shader;
 
-	glfwTerminate();  
+	  
 	return 0; 
 
 }
 
 
 // ±‰Œª÷√
-int changePosByUniform()
+int changePosByUniform(GLFWwindow* window)
 {
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	Shader* shader = new Shader("SimpleShader/shader4.vsh","SimpleShader/shader4.fsh");
 
@@ -310,7 +291,7 @@ int changePosByUniform()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -324,7 +305,7 @@ int changePosByUniform()
 
 
 		// uniform…Ë÷√—’…´
-		float timeValue = glfwGetTime();
+		float timeValue = (float)glfwGetTime();
 		float timeFactor = sin(timeValue);
 		shader->setFloat("timeFactor", timeFactor);
 
@@ -344,22 +325,17 @@ int changePosByUniform()
 
 	delete shader;
 
-	glfwTerminate();  
+	  
 	return 0; 
 
 }
 
 
 
-int triangleColorVBO()
+int triangleColorVBO(GLFWwindow* window)
 {
 
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	Shader* shader = new Shader("SimpleShader/shader5.vsh","SimpleShader/shader5.fsh");
 
@@ -402,7 +378,7 @@ int triangleColorVBO()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -429,7 +405,7 @@ int triangleColorVBO()
 
 	delete shader;
 
-	glfwTerminate();  
+	  
 	return 0; 
 
 

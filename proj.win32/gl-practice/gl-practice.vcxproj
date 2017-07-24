@@ -17,6 +17,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform.cpp" />
+    <ClCompile Include="..\..\gl-practice\SceneManager.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\GLMethod.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\Shader.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\TextureLoader.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform.h" />
+    <ClInclude Include="..\..\gl-practice\SceneManager.h" />
     <ClInclude Include="..\..\gl-practice\Utils\GLMethod.h" />
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h" />
     <ClInclude Include="..\..\gl-practice\Utils\TextureLoader.h" />

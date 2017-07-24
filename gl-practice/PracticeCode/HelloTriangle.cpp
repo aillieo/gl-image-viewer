@@ -12,6 +12,7 @@
 #include <iostream>
 
 #include "HelloTriangle.h"
+#include "../SceneManager.h"
 
 const char *vertexShaderSource = "#version 330 core\n"
 	"layout (location = 0) in vec3 aPos;\n"
@@ -87,14 +88,9 @@ int prepareShaders(const char* vsh, const char* fsh)
 
 
 
-int drawHelloTriangleVAO()
+int drawHelloTriangleVAO(GLFWwindow* window)
 {
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	int shaderProgram = prepareShaders(vertexShaderSource,fragmentShaderSource);
 
@@ -133,7 +129,7 @@ int drawHelloTriangleVAO()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -160,20 +156,16 @@ int drawHelloTriangleVAO()
 
 
 
-	glfwTerminate();  
+
 	return 0; 
 
 
 }
 
-int drawTwoTriangleNoEBO()
+int drawTwoTriangleNoEBO(GLFWwindow* window)
 {
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
+
 
 	float vertices[] = {
 
@@ -219,7 +211,7 @@ int drawTwoTriangleNoEBO()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -246,20 +238,12 @@ int drawTwoTriangleNoEBO()
 
 
 
-	glfwTerminate();  
 	return 0;   
 
 }
 
-int drawTwoTriangleEBO()
+int drawTwoTriangleEBO(GLFWwindow* window)
 {
-
-
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 
 
@@ -310,7 +294,7 @@ int drawTwoTriangleEBO()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -338,22 +322,14 @@ int drawTwoTriangleEBO()
 
 
 
-	glfwTerminate();  
 	return 0;   
 }
 
 
 
-int drawTwoTriangleTwoVAO()
+int drawTwoTriangleTwoVAO(GLFWwindow* window)
 {
 	
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
-
-
 
 	int shaderProgram = prepareShaders(vertexShaderSource,fragmentShaderSource);
 
@@ -406,7 +382,7 @@ int drawTwoTriangleTwoVAO()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -434,20 +410,13 @@ int drawTwoTriangleTwoVAO()
 
 
 
-	glfwTerminate();  
-	
+
 	return 0;   
 }
 
 
-int drawHelloTriangleTwoShader()
+int drawHelloTriangleTwoShader(GLFWwindow* window)
 {
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
-
 
 
 	int shaderProgram_0 = prepareShaders(vertexShaderSource,fragmentShaderSource);
@@ -501,7 +470,7 @@ int drawHelloTriangleTwoShader()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -529,20 +498,12 @@ int drawHelloTriangleTwoShader()
 	glDeleteBuffers(2, VBO);
 
 
-
-	glfwTerminate();  
-	
 	return 0;   
 }
 
-int drawHelloTriangleTwoShaderEBO()
+int drawHelloTriangleTwoShaderEBO(GLFWwindow* window)
 {
 	
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	int shaderProgram_0 = prepareShaders(vertexShaderSource,fragmentShaderSource);
 	int shaderProgram_1 = prepareShaders(vertexShaderSource,fragmentShaderSourceBlue);
@@ -606,7 +567,7 @@ int drawHelloTriangleTwoShaderEBO()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -636,9 +597,6 @@ int drawHelloTriangleTwoShaderEBO()
 	glDeleteBuffers(1, &VBO);
 	glDeleteBuffers(2, EBO);
 
-
-
-	glfwTerminate();  
 	return 0;   
 }
 

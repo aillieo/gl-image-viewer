@@ -54,6 +54,9 @@
     <ClCompile Include="..\..\gl-practice\Utils\TextureLoader.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\SceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -520,6 +523,9 @@
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\Utils\TextureLoader.h">
       <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\SceneManager.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

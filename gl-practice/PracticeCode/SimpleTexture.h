@@ -1,25 +1,26 @@
 #pragma once
 
+#include "../Utils/GLMethod.h"
 
 // 给三角形加上纹理
-int textureForTriangle();
+int textureForTriangle(GLFWwindow* window);
 
 // 显示图片
-int displayImage();
+int displayImage(GLFWwindow* window);
 
 
 // gray
-int grayImage();
+int grayImage(GLFWwindow* window);
 
 
 // 带颜色的四个图片
-int fourImages();
+int fourImages(GLFWwindow* window);
 
 
 // 两张纹理混合
-int twoTextureMix();
+int twoTextureMix(GLFWwindow* window);
 
 
 // 两种不同采样方式放大
-int magnifyTextures();
+int magnifyTextures(GLFWwindow* window);
 

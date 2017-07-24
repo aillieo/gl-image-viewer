@@ -1,4 +1,7 @@
 #include "GLMethod.h"
+#include "..\SceneManager.h"
+
+int LastPressedKey = 0;
 
 GLFWwindow* createWindow(int width, int height)
 {
@@ -37,7 +40,36 @@ GLFWwindow* createWindow(int width, int height)
 void processInput(GLFWwindow *window)
 {
 	if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+	{
 		glfwSetWindowShouldClose(window, true);
+		return;
+	}
+
+	if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+	{
+		LastPressedKey = GLFW_KEY_LEFT;
+	}
+	if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+	{
+		LastPressedKey = GLFW_KEY_RIGHT;
+	}
+
+
+	//
+
+	if(LastPressedKey > 0 && glfwGetKey(window, LastPressedKey) == GLFW_RELEASE)
+	{
+		if (LastPressedKey == GLFW_KEY_RIGHT)
+		{
+			SceneManager::toNext();
+		}
+		else if (LastPressedKey == GLFW_KEY_LEFT)
+		{ 
+			SceneManager::toPrevious();
+		}
+		LastPressedKey = 0;
+	}
+
 }
 
 

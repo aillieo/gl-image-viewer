@@ -6,6 +6,8 @@
 
 #endif
 
+#include "../SceneManager.h"
+
 #include <math.h>
 
 #include <stdio.h>  
@@ -14,20 +16,14 @@
 #include <iostream>
 
 #include "../Utils/Shader.h"
-#include "../Utils/GLMethod.h"
+
 
 #include "../Utils/TextureLoader.h"
 
 
-int textureForTriangle()
+int textureForTriangle(GLFWwindow* window)
 {
 
-
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	Shader* shader = new Shader("SimpleTexture/shader1.vsh","SimpleTexture/shader1.fsh");
 
@@ -98,7 +94,7 @@ int textureForTriangle()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -126,7 +122,7 @@ int textureForTriangle()
 
 	delete shader;
 
-	glfwTerminate();  
+	 
 	return 0; 
 
 
@@ -139,14 +135,9 @@ int textureForTriangle()
 
 
 
-int displayImage()
+int displayImage(GLFWwindow* window)
 {
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	int win_width,win_height;
 	glfwGetWindowSize(window,&win_width,&win_height);
@@ -238,7 +229,7 @@ int displayImage()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -265,20 +256,15 @@ int displayImage()
 
 	delete shader;
 
-	glfwTerminate();  
+	 
 	return 0; 
 
 }
 
 
-int grayImage()
+int grayImage(GLFWwindow* window)
 {
 
-	GLFWwindow* window = createWindow();  
-	if(nullptr == window)
-	{
-		return -1;
-	}
 
 	int win_width,win_height;
 	glfwGetWindowSize(window,&win_width,&win_height);
@@ -370,7 +356,7 @@ int grayImage()
 
 
 	// ‰÷»æ—≠ª∑
-	while(!glfwWindowShouldClose(window))
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
 	{
 		//  ‰»Î
 		processInput(window);
@@ -397,22 +383,16 @@ int grayImage()
 
 	delete shader;
 
-	glfwTerminate();  
+	 
 	return 0; 
 
 }
 
 
 
-int fourImages()
+int fourImages(GLFWwindow* window)
 {
-    
-    GLFWwindow* window = createWindow();
-    if(nullptr == window)
-    {
-        return -1;
-    }
-    
+
     int win_width,win_height;
     glfwGetWindowSize(window,&win_width,&win_height);
     
@@ -503,7 +483,7 @@ int fourImages()
     
     
     // ‰÷»æ—≠ª∑
-    while(!glfwWindowShouldClose(window))
+    while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
     {
         //  ‰»Î
         processInput(window);
@@ -530,7 +510,7 @@ int fourImages()
     
     delete shader;
     
-    glfwTerminate();  
+     
     return 0; 
     
 }
@@ -539,14 +519,8 @@ int fourImages()
 
 
 
-int twoTextureMix()
+int twoTextureMix(GLFWwindow* window)
 {
-    
-    GLFWwindow* window = createWindow();
-    if(nullptr == window)
-    {
-        return -1;
-    }
     
     int win_width,win_height;
     glfwGetWindowSize(window,&win_width,&win_height);
@@ -664,7 +638,7 @@ int twoTextureMix()
     
     
     // ‰÷»æ—≠ª∑
-    while(!glfwWindowShouldClose(window))
+    while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
     {
         //  ‰»Î
         processInput(window);
@@ -681,7 +655,7 @@ int twoTextureMix()
         glBindTexture(GL_TEXTURE_2D, texture[1]);
         
         
-        float timeValue = glfwGetTime();
+        float timeValue = (float)glfwGetTime();
         float timeFactor = sin(timeValue) / 2.0f + 0.5f;
         shader->setFloat("timeFactor", timeFactor);
         
@@ -701,21 +675,15 @@ int twoTextureMix()
     
     delete shader;
     
-    glfwTerminate();  
+
     return 0; 
     
 }
 
 
 
-int magnifyTextures()
+int magnifyTextures(GLFWwindow* window)
 {
-    GLFWwindow* window = createWindow();
-    if(nullptr == window)
-    {
-        return -1;
-    }
-    
     
     // TEXTURE !!!
     unsigned int texture[2];
@@ -842,7 +810,7 @@ int magnifyTextures()
     
     
     // ‰÷»æ—≠ª∑
-    while(!glfwWindowShouldClose(window))
+    while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
     {
         //  ‰»Î
         processInput(window);
@@ -883,7 +851,7 @@ int magnifyTextures()
     
     delete shader;
     
-    glfwTerminate();
+
     return 0;
 
 }
