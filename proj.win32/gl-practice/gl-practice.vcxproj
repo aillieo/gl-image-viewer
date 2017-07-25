@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\gl-practice\3rdParty\glm\detail\glm.cpp" />
     <ClCompile Include="..\..\gl-practice\main.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\BasicColor.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleCamera.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="..\..\gl-practice\3rdParty\glm\vec4.hpp" />
     <ClInclude Include="..\..\gl-practice\3rdParty\glm\vector_relational.hpp" />
     <ClInclude Include="..\..\gl-practice\3rdParty\stb_image.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\BasicColor.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleCamera.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
