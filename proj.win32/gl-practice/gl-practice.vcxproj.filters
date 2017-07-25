@@ -60,6 +60,12 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleCamera.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gl-practice\Utils\Camera.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -532,6 +538,12 @@
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.h">
       <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleCamera.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\Utils\Camera.h">
+      <Filter>Source Files\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -28,6 +28,8 @@ GLFWwindow* createWindow(int width, int height)
 
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetScrollCallback(window, scroll_callback);
 
 	if(glewInit() != GLEW_OK)  
 		return nullptr;  
@@ -83,3 +85,33 @@ GLFWwindow* createWindow()
 {
 	return createWindow(1024,768);
 }
+
+
+void processInput(GLFWwindow *window, Camera* camera, float deltaTime)
+{
+
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+		camera->ProcessKeyboard(FORWARD, deltaTime);
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+		camera->ProcessKeyboard(BACKWARD, deltaTime);
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+		camera->ProcessKeyboard(LEFT, deltaTime);
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+		camera->ProcessKeyboard(RIGHT, deltaTime);
+
+}
+
+
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+
+
+}
+
+
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+
+
+}
+

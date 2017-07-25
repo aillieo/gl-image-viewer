@@ -6,6 +6,7 @@
 #include "PracticeCode/SimpleTexture.h"
 #include "PracticeCode/SimpleTransform.h"
 #include "PracticeCode/SimpleTransform3D.h"
+#include "PracticeCode/SimpleCamera.h"
 
 
 int main()  
@@ -18,7 +19,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 20;
+	SceneManager::sceneIndexMax = 23;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -108,17 +109,26 @@ int main()
 			// 平移缩放旋转
 			box3D(window);
 			break;
-            case 20:
+		case 20:
             // 多个空间旋转
             rotate3DMulti(window);
             break;
-
+		case 21:
+			// 用view矩阵旋转摄像机
+			cameraRotateView(window);
+			break;
+		case 22:
+			// 用lookat旋转摄像机
+			cameraRotateLookAt(window);
+			break;
+		case 23:
+			// ASDW控制摄像机
+			cameraControl(window);
+			break;
 		default:
 			break;
 		}
-		
 	}
-	
 
 	glfwTerminate();
 
