@@ -7,6 +7,7 @@
 #include "PracticeCode/SimpleTransform.h"
 #include "PracticeCode/SimpleTransform3D.h"
 #include "PracticeCode/SimpleCamera.h"
+#include "PracticeCode/BasicColor.h"
 
 
 int main()  
@@ -19,7 +20,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 23;
+	SceneManager::sceneIndexMax = 24;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -124,6 +125,10 @@ int main()
 		case 23:
 			// ASDW控制摄像机
 			cameraControl(window);
+			break;
+		case 24:
+			// 带颜色的物体和虚拟光源
+			basicColor(window);
 			break;
 		default:
 			break;
