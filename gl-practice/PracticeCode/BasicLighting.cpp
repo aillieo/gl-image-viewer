@@ -1,4 +1,4 @@
-#include "SimpleTransform3D.h"
+#include "BasicLighting.h"
 
 #ifdef WIN32
 #include <windows.h>
@@ -12,7 +12,7 @@
 #include "../SceneManager.h"
 
 
-int basicColor(GLFWwindow* window)
+int noLighting(GLFWwindow* window)
 {
 	// 开启深度检测
 	glEnable(GL_DEPTH_TEST);
@@ -23,8 +23,8 @@ int basicColor(GLFWwindow* window)
 
 
 	// SHADER
-	Shader* shaderLight = new Shader("BasicColor/shader1.vsh","BasicColor/shader1.fsh");
-	Shader* shader = new Shader("BasicColor/shader2.vsh","BasicColor/shader2.fsh");
+	Shader* shaderLight = new Shader("BasicLighting/shader1.vsh","BasicLighting/shader1.fsh");
+	Shader* shader = new Shader("BasicLighting/shader2.vsh","BasicLighting/shader2.fsh");
 
 
 	// VERTICES:
@@ -165,6 +165,30 @@ int basicColor(GLFWwindow* window)
 	delete shaderLight;
 	delete camera;
 
+	return 0;
+}
+
+// 只有环境光
+int ambientAlone(GLFWwindow* window)
+{
+	return 0;
+}
+
+// 只有漫反射
+int diffuseAlone(GLFWwindow* window)
+{
+	return 0;
+}
+
+// 只有镜面反射
+int specularAlone(GLFWwindow* window)
+{
+	return 0;
+}
+
+// 使用Phong光照模型
+int PhongLighting(GLFWwindow* window)
+{
 	return 0;
 }
 

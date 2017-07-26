@@ -7,7 +7,7 @@
 #include "PracticeCode/SimpleTransform.h"
 #include "PracticeCode/SimpleTransform3D.h"
 #include "PracticeCode/SimpleCamera.h"
-#include "PracticeCode/BasicColor.h"
+#include "PracticeCode/BasicLighting.h"
 
 
 int main()  
@@ -127,8 +127,8 @@ int main()
 			cameraControl(window);
 			break;
 		case 24:
-			// 带颜色的物体和虚拟光源
-			basicColor(window);
+			// 带颜色的物体和虚拟光源 没有使用光照
+			noLighting(window);
 			break;
 		default:
 			break;
