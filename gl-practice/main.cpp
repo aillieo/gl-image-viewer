@@ -7,6 +7,7 @@
 #include "PracticeCode/SimpleTransform.h"
 #include "PracticeCode/SimpleTransform3D.h"
 #include "PracticeCode/SimpleCamera.h"
+#include "PracticeCode/BasicLighting.h"
 
 
 int main()  
@@ -19,7 +20,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 23;
+	SceneManager::sceneIndexMax = 29;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -124,6 +125,30 @@ int main()
 		case 23:
 			// ASDW控制摄像机
 			cameraControl(window);
+			break;
+		case 24:
+			// 带颜色的物体和虚拟光源 没有使用光照
+			noLighting(window);
+			break;
+		case 25:
+			// 只有环境光
+			ambientAlone(window);
+			break;
+		case 26:
+			// 只有漫反射
+			diffuseAlone(window);
+			break;
+		case 27:
+			// 只有镜面反射
+			specularAlone(window);
+			break;
+		case 28:
+			// 使用Phong光照模型
+			PhongLighting(window);
+			break;
+		case 29:
+			// 使用Phong光照模型 运动的光源
+			PhongLightingMoving(window);
 			break;
 		default:
 			break;

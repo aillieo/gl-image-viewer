@@ -66,7 +66,7 @@
     <ClCompile Include="..\..\gl-practice\Utils\Camera.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gl-practice\PracticeCode\BasicColor.cpp">
+    <ClCompile Include="..\..\gl-practice\PracticeCode\BasicLighting.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
   </ItemGroup>
@@ -548,7 +548,7 @@
     <ClInclude Include="..\..\gl-practice\Utils\Camera.h">
       <Filter>Source Files\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gl-practice\PracticeCode\BasicColor.h">
+    <ClInclude Include="..\..\gl-practice\PracticeCode\BasicLighting.h">
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>
