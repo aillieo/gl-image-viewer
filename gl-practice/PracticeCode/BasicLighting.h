@@ -17,3 +17,5 @@ int specularAlone(GLFWwindow* window);
 // 使用Phong光照模型
 int PhongLighting(GLFWwindow* window);
 
+// 使用Phong光照模型 运动的光源
+int PhongLightingMoving(GLFWwindow* window);

@@ -20,7 +20,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 27;
+	SceneManager::sceneIndexMax = 29;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -145,6 +145,10 @@ int main()
 		case 28:
 			// 使用Phong光照模型
 			PhongLighting(window);
+			break;
+		case 29:
+			// 使用Phong光照模型 运动的光源
+			PhongLightingMoving(window);
 			break;
 		default:
 			break;
