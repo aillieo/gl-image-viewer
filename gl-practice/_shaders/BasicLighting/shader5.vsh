@@ -15,5 +15,4 @@ void main()
     Normal = aNormal;
     
     gl_Position = projection * view * vec4(FragPos, 1.0);
-    gl_Position = model * projection * view * vec4(aPos, 1.0);
 }
