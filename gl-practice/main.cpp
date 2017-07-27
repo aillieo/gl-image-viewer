@@ -20,7 +20,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 24;
+	SceneManager::sceneIndexMax = 27;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -129,6 +129,22 @@ int main()
 		case 24:
 			// 带颜色的物体和虚拟光源 没有使用光照
 			noLighting(window);
+			break;
+		case 25:
+			// 只有环境光
+			ambientAlone(window);
+			break;
+		case 26:
+			// 只有漫反射
+			diffuseAlone(window);
+			break;
+		case 27:
+			// 只有镜面反射
+			specularAlone(window);
+			break;
+		case 28:
+			// 使用Phong光照模型
+			PhongLighting(window);
 			break;
 		default:
 			break;
