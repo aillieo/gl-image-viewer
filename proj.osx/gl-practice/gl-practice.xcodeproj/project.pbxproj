@@ -16,11 +16,12 @@
 		2F6F2A8D1F1BAEA300BFF395 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */; };
 		2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */; };
 		2F6F2A931F1BB35000BFF395 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */; };
+		2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7DFCB91F2E13CC0015663C /* BasicMaterials.cpp */; };
 		2FE046031F2628F10067E589 /* SimpleTransform3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */; };
 		2FE046061F2629080067E589 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046041F2629080067E589 /* SceneManager.cpp */; };
 		2FE046091F2777A20067E589 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046071F2777A20067E589 /* Camera.cpp */; };
-		2FE0460E1F2777AC0067E589 /* BasicColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0460A1F2777AC0067E589 /* BasicColor.cpp */; };
 		2FE0460F1F2777AC0067E589 /* SimpleCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0460C1F2777AC0067E589 /* SimpleCamera.cpp */; };
+		2FE046121F2A28180067E589 /* BasicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046101F2A28180067E589 /* BasicLighting.cpp */; };
 		2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */; };
 		2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */; };
 		2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */; };
@@ -318,16 +319,18 @@
 		2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = lib/libglfw/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		2F7DFCB91F2E13CC0015663C /* BasicMaterials.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = BasicMaterials.cpp; sourceTree = "<group>"; };
+		2F7DFCBA1F2E13CC0015663C /* BasicMaterials.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = BasicMaterials.h; sourceTree = "<group>"; };
 		2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform3D.cpp; sourceTree = "<group>"; };
 		2FE046021F2628F10067E589 /* SimpleTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTransform3D.h; sourceTree = "<group>"; };
 		2FE046041F2629080067E589 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = "../../gl-practice/SceneManager.cpp"; sourceTree = "<group>"; };
 		2FE046051F2629080067E589 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = "../../gl-practice/SceneManager.h"; sourceTree = "<group>"; };
 		2FE046071F2777A20067E589 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		2FE046081F2777A20067E589 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
-		2FE0460A1F2777AC0067E589 /* BasicColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicColor.cpp; sourceTree = "<group>"; };
-		2FE0460B1F2777AC0067E589 /* BasicColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicColor.h; sourceTree = "<group>"; };
 		2FE0460C1F2777AC0067E589 /* SimpleCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleCamera.cpp; sourceTree = "<group>"; };
 		2FE0460D1F2777AC0067E589 /* SimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCamera.h; sourceTree = "<group>"; };
+		2FE046101F2A28180067E589 /* BasicLighting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = BasicLighting.cpp; sourceTree = "<group>"; };
+		2FE046111F2A28180067E589 /* BasicLighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLighting.h; sourceTree = "<group>"; };
 		2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangle.cpp; sourceTree = "<group>"; };
 		2FE7E6C71F2376C50033C7B6 /* HelloTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTriangle.h; sourceTree = "<group>"; };
 		2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTexture.cpp; sourceTree = "<group>"; };
@@ -699,8 +702,10 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
-				2FE0460A1F2777AC0067E589 /* BasicColor.cpp */,
-				2FE0460B1F2777AC0067E589 /* BasicColor.h */,
+				2F7DFCB91F2E13CC0015663C /* BasicMaterials.cpp */,
+				2F7DFCBA1F2E13CC0015663C /* BasicMaterials.h */,
+				2FE046101F2A28180067E589 /* BasicLighting.cpp */,
+				2FE046111F2A28180067E589 /* BasicLighting.h */,
 				2FE0460C1F2777AC0067E589 /* SimpleCamera.cpp */,
 				2FE0460D1F2777AC0067E589 /* SimpleCamera.h */,
 				2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */,
@@ -798,11 +803,12 @@
 				2F5772A61F238DA6001F124E /* glm.cpp in Sources */,
 				2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */,
 				2FE046091F2777A20067E589 /* Camera.cpp in Sources */,
+				2FE046121F2A28180067E589 /* BasicLighting.cpp in Sources */,
 				2F0774C61F24CF5F00D5F003 /* TextureLoader.cpp in Sources */,
-				2FE0460E1F2777AC0067E589 /* BasicColor.cpp in Sources */,
 				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
+				2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */,
 				2FE046061F2629080067E589 /* SceneManager.cpp in Sources */,
 				2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */,
 				2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */,

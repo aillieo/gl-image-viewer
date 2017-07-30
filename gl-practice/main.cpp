@@ -8,6 +8,8 @@
 #include "PracticeCode/SimpleTransform3D.h"
 #include "PracticeCode/SimpleCamera.h"
 #include "PracticeCode/BasicLighting.h"
+#include "PracticeCode/BasicMaterials.h"
+
 
 
 int main()  
@@ -20,7 +22,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 29;
+	SceneManager::sceneIndexMax = 30;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -150,6 +152,10 @@ int main()
 			// 使用Phong光照模型 运动的光源
 			PhongLightingMoving(window);
 			break;
+        case 30:
+            // 使用材质
+            useMaterials(window);
+            break;
 		default:
 			break;
 		}

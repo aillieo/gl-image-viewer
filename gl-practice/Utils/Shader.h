@@ -8,6 +8,9 @@
 #include <iostream>
 #include "GL/glew.h"
 
+#include "../Utils/GLMethod.h"
+
+
 
 class Shader
 {
@@ -27,7 +30,9 @@ public:
     void setFloat(const std::string &name, float value) const;
 	void setMat4(const std::string &name, GLsizei count, GLboolean transpose, const GLfloat* value) const;
     void setMat4(const std::string &name, const GLfloat* value) const;
-	void setVec3(const std::string &name, const GLfloat* value) const;
+    void setMat4(const std::string &name, const glm::mat4 value) const;
+    void setVec3(const std::string &name, const GLfloat* value) const;
+    void setVec3(const std::string &name, const glm::vec3 value) const;
 
 private:
 	
