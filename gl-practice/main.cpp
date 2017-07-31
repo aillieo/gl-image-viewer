@@ -22,7 +22,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 30;
+	SceneManager::sceneIndexMax = 34;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -156,6 +156,24 @@ int main()
             // 使用材质
             useMaterials(window);
             break;
+        case 31:
+			// 青色塑料盒子
+			cyanPlasticBox(window);
+			break;
+        case 32:
+			// 金箱子
+			goldenBox(window);
+			break;
+        case 33:
+			// 银箱子
+			silverBox(window);
+			break;
+        case 34:
+			// 橡胶箱子
+			rubberBox(window);
+			break;
+
+
 		default:
 			break;
 		}
