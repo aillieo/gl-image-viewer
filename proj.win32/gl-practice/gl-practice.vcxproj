@@ -16,6 +16,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicLighting.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMaterials.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\LightingMaps.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleCamera.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicLighting.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMaterials.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\LightingMaps.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleCamera.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h" />

@@ -9,6 +9,7 @@
 #include "PracticeCode/SimpleCamera.h"
 #include "PracticeCode/BasicLighting.h"
 #include "PracticeCode/BasicMaterials.h"
+#include "PracticeCode/LightingMaps.h"
 
 
 
@@ -22,7 +23,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 34;
+	SceneManager::sceneIndexMax = 35;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -172,6 +173,20 @@ int main()
 			// Ïğ½ºÏä×Ó
 			rubberBox(window);
 			break;
+        case 35:
+			// Âş·´ÉäÌùÍ¼
+			diffuseMap(window);
+			break;
+        case 36:
+			// ¾µÃæ·´ÉäÌùÍ¼
+			specularMap(window);
+			break;
+        case 37:
+			// ·¢¹âÌùÍ¼
+			emissionMap(window);
+			break;
+
+
 
 
 		default:
