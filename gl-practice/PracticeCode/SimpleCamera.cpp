@@ -173,7 +173,7 @@ int cameraRotateView(GLFWwindow* window)
 
 
 
-		for (int i = 0; i < sizeof(cubePositions); i++)
+		for (int i = 0; i < sizeof(cubePositions)/sizeof(cubePositions[0]); i++)
 		{
 
 			glm::mat4 model;
@@ -360,7 +360,7 @@ int cameraRotateLookAt(GLFWwindow* window)
 
 
 
-		for (int i = 0; i < sizeof(cubePositions); i++)
+		for (int i = 0; i < sizeof(cubePositions)/sizeof(cubePositions[0]); i++)
 		{
 
 			glm::mat4 model;
@@ -560,7 +560,7 @@ int cameraControl(GLFWwindow* window)
 
 
 
-		for (int i = 0; i < sizeof(cubePositions); i++)
+		for (int i = 0; i < sizeof(cubePositions)/sizeof(cubePositions[0]); i++)
 		{
 
 			glm::mat4 model;

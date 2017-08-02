@@ -10,6 +10,7 @@
 #include "PracticeCode/BasicLighting.h"
 #include "PracticeCode/BasicMaterials.h"
 #include "PracticeCode/LightingMaps.h"
+#include "PracticeCode/LightCasters.h"
 
 
 
@@ -23,7 +24,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 37;
+	SceneManager::sceneIndexMax = 38;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -185,7 +186,18 @@ int main()
 			// 发光贴图
 			emissionMap(window);
 			break;
-
+		case 38:
+			// 平行光
+			directionalLight(window);
+			break;
+		case 39:
+			// 点光源
+			pointLight(window);
+			break;
+		case 40:
+			// 聚光灯
+			spotlight(window);
+			break;
 
 
 
