@@ -11,7 +11,7 @@
 #include "PracticeCode/BasicMaterials.h"
 #include "PracticeCode/LightingMaps.h"
 #include "PracticeCode/LightCasters.h"
-
+#include "PracticeCode/MultipleLights.h"
 
 
 int main()  
@@ -24,7 +24,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 40;
+	SceneManager::sceneIndexMax = 41;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -198,9 +198,14 @@ int main()
 			// 聚光灯
 			spotlight(window);
 			break;
+		case 41:
+            // 多个光源
+            multipleLights(window);
+            break;
+                
 
 
-
+                
 		default:
 			break;
 		}
