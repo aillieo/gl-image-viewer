@@ -24,7 +24,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 41;
+	SceneManager::sceneIndexMax = 42;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -202,9 +202,13 @@ int main()
             // 多个光源
             multipleLights(window);
             break;
+        case 42:
+            // 三个点光源 红绿蓝
+            multipleLightsRGB(window);
+            break;
+            
                 
-
-
+                
                 
 		default:
 			break;
