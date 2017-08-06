@@ -20,6 +20,8 @@
 		2F8638831F30A8AF00C31699 /* LightingMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F8638811F30A8AF00C31699 /* LightingMaps.cpp */; };
 		2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EA71F3202F500B7EC2F /* LightCasters.cpp */; };
 		2F917EAC1F335E5900B7EC2F /* MultipleLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */; };
+		2F917EC31F36F59F00B7EC2F /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */; };
+		2F917EC61F36F5E000B7EC2F /* BasicMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EC41F36F5E000B7EC2F /* BasicMesh.cpp */; };
 		2FE046031F2628F10067E589 /* SimpleTransform3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */; };
 		2FE046061F2629080067E589 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046041F2629080067E589 /* SceneManager.cpp */; };
 		2FE046091F2777A20067E589 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046071F2777A20067E589 /* Camera.cpp */; };
@@ -330,6 +332,9 @@
 		2F917EA81F3202F500B7EC2F /* LightCasters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightCasters.h; sourceTree = "<group>"; };
 		2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = MultipleLights.cpp; sourceTree = "<group>"; };
 		2F917EAB1F335E5900B7EC2F /* MultipleLights.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = MultipleLights.h; sourceTree = "<group>"; };
+		2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = lib/libassimp/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
+		2F917EC41F36F5E000B7EC2F /* BasicMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicMesh.cpp; sourceTree = "<group>"; };
+		2F917EC51F36F5E000B7EC2F /* BasicMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMesh.h; sourceTree = "<group>"; };
 		2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform3D.cpp; sourceTree = "<group>"; };
 		2FE046021F2628F10067E589 /* SimpleTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTransform3D.h; sourceTree = "<group>"; };
 		2FE046041F2629080067E589 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = "../../gl-practice/SceneManager.cpp"; sourceTree = "<group>"; };
@@ -353,6 +358,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F917EC31F36F59F00B7EC2F /* libassimp.3.3.1.dylib in Frameworks */,
 				2F6F2A931F1BB35000BFF395 /* libGLEW.2.0.0.dylib in Frameworks */,
 				2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */,
 				2F6F2A8D1F1BAEA300BFF395 /* OpenGL.framework in Frameworks */,
@@ -699,6 +705,7 @@
 		2F6F2A6E1F1BA6A300BFF395 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */,
 				2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */,
 				2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */,
 				2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */,
@@ -711,6 +718,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F917EC41F36F5E000B7EC2F /* BasicMesh.cpp */,
+				2F917EC51F36F5E000B7EC2F /* BasicMesh.h */,
 				2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */,
 				2F917EAB1F335E5900B7EC2F /* MultipleLights.h */,
 				2F917EA71F3202F500B7EC2F /* LightCasters.cpp */,
@@ -824,6 +833,7 @@
 				2F8638831F30A8AF00C31699 /* LightingMaps.cpp in Sources */,
 				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
+				2F917EC61F36F5E000B7EC2F /* BasicMesh.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
 				2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */,
 				2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */,
@@ -936,6 +946,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib/libglfw",
 					"$(PROJECT_DIR)/lib/libGLEW",
+					"$(PROJECT_DIR)/lib/libassimp",
 				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-lGLEW",
@@ -959,6 +970,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib/libglfw",
 					"$(PROJECT_DIR)/lib/libGLEW",
+					"$(PROJECT_DIR)/lib/libassimp",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
