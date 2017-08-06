@@ -12,6 +12,8 @@
 #include "PracticeCode/LightingMaps.h"
 #include "PracticeCode/LightCasters.h"
 #include "PracticeCode/MultipleLights.h"
+#include "PracticeCode/BasicMesh.h"
+
 
 
 int main()  

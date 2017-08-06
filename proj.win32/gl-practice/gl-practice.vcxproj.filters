@@ -78,6 +78,12 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightCasters.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMesh.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\MultipleLights.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -567,6 +573,12 @@
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightCasters.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMesh.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\MultipleLights.h">
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>
