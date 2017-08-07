@@ -2,7 +2,7 @@
 
 #include "../Utils/GLMethod.h"
 
-// 网格
+// 加载模型
 int loadModel(GLFWwindow* window);
 
 

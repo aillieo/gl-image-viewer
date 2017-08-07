@@ -327,7 +327,7 @@
 		2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = lib/libglfw/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		2F7720991F389C92007A480F /* LoadModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadModel.cpp; sourceTree = "<group>"; };
-		2F77209A1F389C92007A480F /* LoadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadModel.h; sourceTree = "<group>"; };
+		2F77209A1F389C92007A480F /* LoadModel.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = LoadModel.h; sourceTree = "<group>"; };
 		2F77209C1F389CA2007A480F /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
 		2F77209D1F389CA2007A480F /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
 		2F77209E1F389CA2007A480F /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };

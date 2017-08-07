@@ -15,7 +15,6 @@
 #include "PracticeCode/LoadModel.h"
 
 
-
 int main()  
 {  
 
@@ -26,7 +25,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 42;
+	SceneManager::sceneIndexMax = 43;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -208,7 +207,10 @@ int main()
             // 三个点光源 红绿蓝
             multipleLightsRGB(window);
             break;
-            
+        case 43:
+            // 加载模型
+            loadModel(window);
+            break;
                 
                 
                 

@@ -164,7 +164,7 @@ vector<Texture> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType type,
         if(!skip)
         {   // if texture hasn't been loaded already, load it
             Texture texture;
-            string fullPath = this->directory.append(str.C_Str());
+            string fullPath = this->directory + "/" + string(str.C_Str());
             texture.id = TextureLoader::loadTexture(fullPath.c_str());
             texture.type = typeName;
             texture.path = str;
