@@ -15,10 +15,10 @@
     <ClCompile Include="..\..\gl-practice\main.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicLighting.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMaterials.cpp" />
-    <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMesh.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightCasters.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightingMaps.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\LoadModel.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\MultipleLights.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleCamera.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
@@ -182,10 +182,10 @@
     <ClInclude Include="..\..\gl-practice\3rdParty\stb_image.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicLighting.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMaterials.h" />
-    <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMesh.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightCasters.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightingMaps.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\LoadModel.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\MultipleLights.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleCamera.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
