@@ -3,6 +3,11 @@
 
 int LastPressedKey = 0;
 
+Camera* currentCamera = nullptr;
+bool firstMouse = true;
+float lastX = 0.0f;
+float lastY = 0.0f;
+
 GLFWwindow* createWindow(int width, int height)
 {
 	if(!glfwInit())  
@@ -105,13 +110,54 @@ void processInput(GLFWwindow *window, Camera* camera, float deltaTime)
 void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 {
 
+	if(nullptr == currentCamera)
+	{
+		return;
+	}
+
+	if (firstMouse)
+	{
+		lastX = xpos;
+		lastY = ypos;
+		firstMouse = false;
+	}
+
+	float xoffset = xpos - lastX;
+	float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
+
+	lastX = xpos;
+	lastY = ypos;
+
+	currentCamera->ProcessMouseMovement(xoffset, yoffset);
 
 }
 
 
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
-
-
+	if(nullptr == currentCamera)
+	{
+		return;
+	}
+	currentCamera->ProcessMouseScroll(yoffset);
 }
 
+
+void bindCameraToWindow(GLFWwindow* window, Camera* camera)
+{
+	currentCamera = camera;
+
+	int win_width,win_height;
+	glfwGetWindowSize(window,&win_width,&win_height);
+
+	lastX = win_width / 2.0f;
+	lastY = win_height / 2.0f;
+
+	firstMouse = true;
+}
+
+void unbindCamera(GLFWwindow* window)
+{
+	currentCamera = nullptr;
+
+}

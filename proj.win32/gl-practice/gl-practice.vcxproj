@@ -28,6 +28,8 @@
     <ClCompile Include="..\..\gl-practice\SceneManager.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\Camera.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\GLMethod.cpp" />
+    <ClCompile Include="..\..\gl-practice\Utils\Mesh.cpp" />
+    <ClCompile Include="..\..\gl-practice\Utils\Model.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\Shader.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\TextureLoader.cpp" />
   </ItemGroup>
@@ -195,6 +197,8 @@
     <ClInclude Include="..\..\gl-practice\SceneManager.h" />
     <ClInclude Include="..\..\gl-practice\Utils\Camera.h" />
     <ClInclude Include="..\..\gl-practice\Utils\GLMethod.h" />
+    <ClInclude Include="..\..\gl-practice\Utils\Mesh.h" />
+    <ClInclude Include="..\..\gl-practice\Utils\Model.h" />
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h" />
     <ClInclude Include="..\..\gl-practice\Utils\TextureLoader.h" />
   </ItemGroup>

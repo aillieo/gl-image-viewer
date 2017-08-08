@@ -42,7 +42,8 @@ int loadModel(GLFWwindow* window)
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
     
-    
+    bindCameraToWindow(window, camera);
+
     // draw in wireframe
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     
@@ -89,6 +90,8 @@ int loadModel(GLFWwindow* window)
         glfwPollEvents();
     }
     
+	unbindCamera(window);
+
     delete shader;
     delete modelObj;
     delete camera;
