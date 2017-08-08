@@ -13,6 +13,7 @@
 #include "PracticeCode/LightCasters.h"
 #include "PracticeCode/MultipleLights.h"
 #include "PracticeCode/LoadModel.h"
+#include "PracticeCode/DepthTesting.h"
 
 
 int main()  
@@ -210,8 +211,16 @@ int main()
         case 43:
             // 加载模型
             loadModel(window);
-            break;
-                
+			break;
+		case 44:
+			// 深度可视化
+			visualizingDepth(window);
+			break;
+		case 45:
+			// 深度可视化（线性）
+			visualizingDepthLinear(window);
+			break;
+
                 
                 
 		default:

@@ -136,6 +136,12 @@ Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene)
     std::vector<Texture> heightMaps = loadMaterialTextures(material, aiTextureType_AMBIENT, "texture_height");
     textures.insert(textures.end(), heightMaps.begin(), heightMaps.end());
     
+	std::cout<<mesh->mName.C_Str()<<":  "
+		<<"texture_diffuse("<<diffuseMaps.size()
+		<<"), texture_specular("<<specularMaps.size()
+		<<"), texture_normal("<<normalMaps.size()
+		<<"), texture_height("<<heightMaps.size()<<")"<<std::endl;
+
     // return a mesh object created from the extracted mesh data
     return Mesh(vertices, indices, textures);
 }
