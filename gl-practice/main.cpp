@@ -26,7 +26,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 43;
+	SceneManager::sceneIndexMax = 44;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -213,10 +213,14 @@ int main()
             loadModel(window);
 			break;
 		case 44:
+			// 深度检测函数GL_ALWAYS
+			depthFuncAlways(window);
+			break;
+		case 45:
 			// 深度可视化
 			visualizingDepth(window);
 			break;
-		case 45:
+		case 46:
 			// 深度可视化（线性）
 			visualizingDepthLinear(window);
 			break;
