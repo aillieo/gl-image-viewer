@@ -26,6 +26,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\StencilTesting.cpp" />
     <ClCompile Include="..\..\gl-practice\SceneManager.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\Camera.cpp" />
     <ClCompile Include="..\..\gl-practice\Utils\GLMethod.cpp" />
@@ -196,6 +197,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\StencilTesting.h" />
     <ClInclude Include="..\..\gl-practice\SceneManager.h" />
     <ClInclude Include="..\..\gl-practice\Utils\Camera.h" />
     <ClInclude Include="..\..\gl-practice\Utils\GLMethod.h" />

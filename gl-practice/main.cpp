@@ -14,6 +14,7 @@
 #include "PracticeCode/MultipleLights.h"
 #include "PracticeCode/LoadModel.h"
 #include "PracticeCode/DepthTesting.h"
+#include "PracticeCode/StencilTesting.h"
 
 
 int main()  
@@ -26,7 +27,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 46;
+	SceneManager::sceneIndexMax = 47;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -224,9 +225,19 @@ int main()
 			// 深度可视化（线性）
 			visualizingDepthLinear(window);
 			break;
+		case 47:
+			// 场景只显示指定区域
+			simpleClip(window);
+			break;
+		case 48:
+			// 给箱子加轮廓
+			boxOutlining(window);
+			break;
 
-                
-                
+
+
+
+
 		default:
 			break;
 		}
