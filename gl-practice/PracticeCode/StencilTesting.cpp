@@ -458,8 +458,10 @@ int boxOutlining(GLFWwindow* window)
         glDrawArrays(GL_TRIANGLES, 0, 36);
         
 
-        glStencilMask(0xFF);// 很神奇 这一句去掉就会导致outline绘制不完整 看来绘制并没有结束
-        
+		// 很神奇 这一句去掉就会导致outline绘制不完整 看来绘制并没有结束
+		// 原来是这样： 如果不置为 0xFF  会影响 GL_STENCIL_BUFFER_BIT 的正常清空
+        glStencilMask(0xFF);
+		
         glEnable(GL_DEPTH_TEST);
         glBindVertexArray(0);
         
