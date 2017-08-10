@@ -96,6 +96,9 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\StencilTesting.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\Blending.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -603,6 +606,9 @@
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\StencilTesting.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\Blending.h">
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>

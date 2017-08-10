@@ -15,6 +15,8 @@
 #include "PracticeCode/LoadModel.h"
 #include "PracticeCode/DepthTesting.h"
 #include "PracticeCode/StencilTesting.h"
+#include "PracticeCode/Blending.h"
+
 
 
 int main()  
@@ -233,8 +235,14 @@ int main()
 			// 给箱子加轮廓
 			boxOutlining(window);
 			break;
-
-
+		case 49:
+			// 片段着色器中丢弃透明片段
+			discardFragAlpha(window);
+			break;
+		case 50:
+			// 按顺序绘制透明物体
+			transparentWithSorting(window);
+			break;
 
 
 
