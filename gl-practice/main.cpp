@@ -17,6 +17,7 @@
 #include "PracticeCode/StencilTesting.h"
 #include "PracticeCode/Blending.h"
 #include "PracticeCode/FaceCulling.h"
+#include "PracticeCode/FrameBuffers.h"
 
 
 
@@ -248,6 +249,16 @@ int main()
 			// 使用面剔除
 			useFaceCulling( window);
 			break;
+		case 52:
+			// 渲染到纹理
+			RenderToTexture(window);
+			break;
+		case 53:
+			// 四种后处理
+			postProcessings(window);
+			break;
+
+
 
 		default:
 			break;
