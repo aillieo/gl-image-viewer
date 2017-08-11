@@ -17,6 +17,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMaterials.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\Blending.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\DepthTesting.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\FaceCulling.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightCasters.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightingMaps.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMaterials.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\Blending.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\DepthTesting.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\FaceCulling.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightCasters.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightingMaps.h" />

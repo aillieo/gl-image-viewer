@@ -16,6 +16,7 @@
 #include "PracticeCode/DepthTesting.h"
 #include "PracticeCode/StencilTesting.h"
 #include "PracticeCode/Blending.h"
+#include "PracticeCode/FaceCulling.h"
 
 
 
@@ -29,7 +30,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 50;
+	SceneManager::sceneIndexMax = 51;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -243,8 +244,10 @@ int main()
 			// 按顺序绘制透明物体
 			transparentWithSorting(window);
 			break;
-
-
+		case 51:
+			// 使用面剔除
+			useFaceCulling( window);
+			break;
 
 		default:
 			break;
