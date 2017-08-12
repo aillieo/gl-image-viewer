@@ -12,6 +12,9 @@
 		2F092FF11F39ECCB004B8A5E /* DepthTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */; };
 		2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */; };
 		2F3E970E1F3B3FEF000DAB5F /* StencilTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E970C1F3B3FEF000DAB5F /* StencilTesting.cpp */; };
+		2F3E97111F3C8E95000DAB5F /* Blending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E970F1F3C8E95000DAB5F /* Blending.cpp */; };
+		2F4A426F1F3F070B002166C7 /* FaceCulling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A426B1F3F070B002166C7 /* FaceCulling.cpp */; };
+		2F4A42701F3F070B002166C7 /* FrameBuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A426D1F3F070B002166C7 /* FrameBuffers.cpp */; };
 		2F5772A61F238DA6001F124E /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5771BA1F238DA6001F124E /* glm.cpp */; };
 		2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A821F1BABBD00BFF395 /* main.cpp */; };
 		2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F2A871F1BABBD00BFF395 /* Shader.cpp */; };
@@ -59,6 +62,12 @@
 		2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleShader.h; sourceTree = "<group>"; };
 		2F3E970C1F3B3FEF000DAB5F /* StencilTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = StencilTesting.cpp; sourceTree = "<group>"; };
 		2F3E970D1F3B3FEF000DAB5F /* StencilTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StencilTesting.h; sourceTree = "<group>"; };
+		2F3E970F1F3C8E95000DAB5F /* Blending.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blending.cpp; sourceTree = "<group>"; };
+		2F3E97101F3C8E95000DAB5F /* Blending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blending.h; sourceTree = "<group>"; };
+		2F4A426B1F3F070B002166C7 /* FaceCulling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceCulling.cpp; sourceTree = "<group>"; };
+		2F4A426C1F3F070B002166C7 /* FaceCulling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceCulling.h; sourceTree = "<group>"; };
+		2F4A426D1F3F070B002166C7 /* FrameBuffers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffers.cpp; sourceTree = "<group>"; };
+		2F4A426E1F3F070B002166C7 /* FrameBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffers.h; sourceTree = "<group>"; };
 		2F5771981F238DA6001F124E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		2F5771991F238DA6001F124E /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		2F57719B1F238DA6001F124E /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -730,6 +739,12 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F4A426B1F3F070B002166C7 /* FaceCulling.cpp */,
+				2F4A426C1F3F070B002166C7 /* FaceCulling.h */,
+				2F4A426D1F3F070B002166C7 /* FrameBuffers.cpp */,
+				2F4A426E1F3F070B002166C7 /* FrameBuffers.h */,
+				2F3E970F1F3C8E95000DAB5F /* Blending.cpp */,
+				2F3E97101F3C8E95000DAB5F /* Blending.h */,
 				2F3E970C1F3B3FEF000DAB5F /* StencilTesting.cpp */,
 				2F3E970D1F3B3FEF000DAB5F /* StencilTesting.h */,
 				2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */,
@@ -841,8 +856,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3E97111F3C8E95000DAB5F /* Blending.cpp in Sources */,
 				2F092FF11F39ECCB004B8A5E /* DepthTesting.cpp in Sources */,
 				2FE0460F1F2777AC0067E589 /* SimpleCamera.cpp in Sources */,
+				2F4A426F1F3F070B002166C7 /* FaceCulling.cpp in Sources */,
 				2F0774C91F24D2F400D5F003 /* SimpleTransform.cpp in Sources */,
 				2FE046031F2628F10067E589 /* SimpleTransform3D.cpp in Sources */,
 				2F5772A61F238DA6001F124E /* glm.cpp in Sources */,
@@ -860,6 +877,7 @@
 				2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */,
 				2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */,
 				2FE046061F2629080067E589 /* SceneManager.cpp in Sources */,
+				2F4A42701F3F070B002166C7 /* FrameBuffers.cpp in Sources */,
 				2F3E970E1F3B3FEF000DAB5F /* StencilTesting.cpp in Sources */,
 				2F7720A11F389CA2007A480F /* Model.cpp in Sources */,
 				2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */,
