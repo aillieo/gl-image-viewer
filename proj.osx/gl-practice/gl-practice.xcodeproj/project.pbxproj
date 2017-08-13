@@ -56,7 +56,7 @@
 		2F0774C51F24CF5F00D5F003 /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
 		2F0774C71F24D2F400D5F003 /* SimpleTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform.cpp; sourceTree = "<group>"; };
 		2F0774C81F24D2F400D5F003 /* SimpleTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTransform.h; sourceTree = "<group>"; };
-		2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthTesting.cpp; sourceTree = "<group>"; };
+		2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = DepthTesting.cpp; sourceTree = "<group>"; };
 		2F092FF01F39ECCB004B8A5E /* DepthTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthTesting.h; sourceTree = "<group>"; };
 		2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleShader.cpp; sourceTree = "<group>"; };
 		2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleShader.h; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		2F3E97101F3C8E95000DAB5F /* Blending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blending.h; sourceTree = "<group>"; };
 		2F4A426B1F3F070B002166C7 /* FaceCulling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceCulling.cpp; sourceTree = "<group>"; };
 		2F4A426C1F3F070B002166C7 /* FaceCulling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceCulling.h; sourceTree = "<group>"; };
-		2F4A426D1F3F070B002166C7 /* FrameBuffers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffers.cpp; sourceTree = "<group>"; };
-		2F4A426E1F3F070B002166C7 /* FrameBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffers.h; sourceTree = "<group>"; };
+		2F4A426D1F3F070B002166C7 /* FrameBuffers.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffers.cpp; sourceTree = "<group>"; };
+		2F4A426E1F3F070B002166C7 /* FrameBuffers.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = FrameBuffers.h; sourceTree = "<group>"; };
 		2F5771981F238DA6001F124E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		2F5771991F238DA6001F124E /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		2F57719B1F238DA6001F124E /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
