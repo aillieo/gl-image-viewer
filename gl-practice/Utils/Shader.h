@@ -20,7 +20,10 @@ public:
 
 
     Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
+	Shader();
+	~Shader();
 
+	void init(const GLchar* vertexPath, const GLchar* fragmentPath);
 
     void use();
 

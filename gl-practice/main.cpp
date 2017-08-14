@@ -31,7 +31,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 52;
+	SceneManager::sceneIndexMax = 53;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -257,8 +257,10 @@ int main()
 			// 四种后处理
 			postProcessings(window);
 			break;
-
-
+		case 54:
+			// 在模板测试中使用渲染缓冲对象
+			stencilTestingWithRBO(window);
+			break;
 
 		default:
 			break;
