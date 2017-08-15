@@ -587,11 +587,3 @@ int postProcessings(GLFWwindow* window)
 	return 0;
 }
 
-// 在模板测试中使用渲染缓冲对象
-int stencilTestingWithRBO(GLFWwindow* window)
-{
-
-	return 0;
-}
-
-

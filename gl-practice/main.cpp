@@ -258,8 +258,8 @@ int main()
 			postProcessings(window);
 			break;
 		case 54:
-			// 在模板测试中使用渲染缓冲对象
-			stencilTestingWithRBO(window);
+
+
 			break;
 
 		default:
