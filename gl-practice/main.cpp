@@ -18,6 +18,7 @@
 #include "PracticeCode/Blending.h"
 #include "PracticeCode/FaceCulling.h"
 #include "PracticeCode/FrameBuffers.h"
+#include "PracticeCode/CubeMaps.h"
 
 
 
@@ -258,6 +259,33 @@ int main()
 			postProcessings(window);
 			break;
 		case 54:
+			// 错误的天空盒（不控制model位移）
+			badSkyBox(window);
+			break;
+		case 55:
+			// 正确的天空盒
+			rightSkyBox(window);
+			break;
+		case 56:
+			// 立方体反射
+			boxReflection(window);
+			break;
+		case 57:
+			// 模型反射
+			modelReflection(window);
+			break;
+		case 58:
+			// 立方体折射
+			boxRefraction(window);
+			break;
+		case 59:
+			// 模型折射
+			modelRefraction(window);
+			break;
+
+
+
+
 
 
 			break;
