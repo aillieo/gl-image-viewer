@@ -21,6 +21,7 @@
 		2F6F2A8D1F1BAEA300BFF395 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */; };
 		2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */; };
 		2F6F2A931F1BB35000BFF395 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */; };
+		2F74096C1F44875600CA0FFB /* CubeMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F74096A1F44875600CA0FFB /* CubeMaps.cpp */; };
 		2F77209B1F389C92007A480F /* LoadModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7720991F389C92007A480F /* LoadModel.cpp */; };
 		2F7720A01F389CA2007A480F /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F77209C1F389CA2007A480F /* Mesh.cpp */; };
 		2F7720A11F389CA2007A480F /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F77209E1F389CA2007A480F /* Model.cpp */; };
@@ -341,6 +342,8 @@
 		2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = lib/libglfw/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		2F74096A1F44875600CA0FFB /* CubeMaps.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = CubeMaps.cpp; sourceTree = "<group>"; };
+		2F74096B1F44875600CA0FFB /* CubeMaps.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = CubeMaps.h; sourceTree = "<group>"; };
 		2F7720991F389C92007A480F /* LoadModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadModel.cpp; sourceTree = "<group>"; };
 		2F77209A1F389C92007A480F /* LoadModel.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = LoadModel.h; sourceTree = "<group>"; };
 		2F77209C1F389CA2007A480F /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
@@ -739,6 +742,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F74096A1F44875600CA0FFB /* CubeMaps.cpp */,
+				2F74096B1F44875600CA0FFB /* CubeMaps.h */,
 				2F4A426B1F3F070B002166C7 /* FaceCulling.cpp */,
 				2F4A426C1F3F070B002166C7 /* FaceCulling.h */,
 				2F4A426D1F3F070B002166C7 /* FrameBuffers.cpp */,
@@ -882,6 +887,7 @@
 				2F7720A11F389CA2007A480F /* Model.cpp in Sources */,
 				2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */,
 				2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */,
+				2F74096C1F44875600CA0FFB /* CubeMaps.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

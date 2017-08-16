@@ -3,7 +3,7 @@
 #include "../Utils/GLMethod.h"
 
 
-// 错误的天空盒（不控制model位移）
+// 错误的天空盒（不控制view位移）
 int badSkyBox(GLFWwindow* window);
 
 // 正确的天空盒
