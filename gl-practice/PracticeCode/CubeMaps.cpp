@@ -151,7 +151,7 @@ int badSkyBox(GLFWwindow* window)
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
 	unsigned int textureCube = TextureLoader::loadTexture("lighting_maps/diffuseMap.png");
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("skybox");
+	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake");
 
 
 
@@ -380,7 +380,7 @@ int rightSkyBox(GLFWwindow* window)
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
 	unsigned int textureCube = TextureLoader::loadTexture("lighting_maps/diffuseMap.png");
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("skybox");
+	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake/");
 
 
 
