@@ -74,6 +74,14 @@ unsigned int TextureLoader::loadCubeMap(char const *filepath)
 		path.append("/");
 	}
 
+	// order:
+	// +X (right)
+	// -X (left)
+	// +Y (top)
+	// -Y (bottom)
+	// +Z (front) 
+	// -Z (back)
+
 	files.push_back(path + "right.jpg");
 	files.push_back(path + "left.jpg");
 	files.push_back(path + "top.jpg");
