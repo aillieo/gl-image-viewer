@@ -19,6 +19,8 @@ public:
 
 	static unsigned int loadTexture(char const *filename);
     
+	static unsigned int loadCubeMap(char const *filepath);
+
 };
 
 #endif

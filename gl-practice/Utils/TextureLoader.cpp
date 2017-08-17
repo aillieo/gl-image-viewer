@@ -3,6 +3,7 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+#include <vector>
 
 
 unsigned char* TextureLoader::loadTexture(char const *filename, int *x, int *y, int *comp, int req_comp)
@@ -62,3 +63,45 @@ unsigned int TextureLoader::loadTexture(char const *filename)
 	return textureID;
 }
 
+
+unsigned int TextureLoader::loadCubeMap(char const *filepath)
+{
+
+	std::vector<std::string> files;
+	std::string path = std::string(filepath);
+	files.push_back(path + "/right.jpg");
+	files.push_back(path + "/left.jpg");
+	files.push_back(path + "/top.jpg");
+	files.push_back(path + "/bottom.jpg");
+	files.push_back(path + "/back.jpg");
+	files.push_back(path + "/front.jpg");
+
+
+	unsigned int textureID;
+	glGenTextures(1, &textureID);
+	glBindTexture(GL_TEXTURE_CUBE_MAP, textureID);
+
+	int width, height, nrComponents;
+	for (unsigned int i = 0; i < files.size(); i++)
+	{
+		unsigned char *data = loadTexture(files[i].c_str(), &width ,&height, &nrComponents, 0);
+		if (data)
+		{
+			glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+			stbi_image_free(data);
+		}
+		else
+		{
+			std::cout << "Cubemap texture failed to load at path: " << files[i] << std::endl;
+			stbi_image_free(data);
+		}
+	}
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+
+	return textureID;
+
+}
