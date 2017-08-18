@@ -19,6 +19,7 @@
 #include "PracticeCode/FaceCulling.h"
 #include "PracticeCode/FrameBuffers.h"
 #include "PracticeCode/CubeMaps.h"
+#include "PracticeCode/AdvancedGLSL.h"
 
 
 
@@ -282,13 +283,27 @@ int main()
 			// 模型折射
 			modelRefraction(window);
 			break;
-
-
-
-
-
-
+		case 60:
+			// 使用gl_PointSize
+			usePointSize(window);
 			break;
+		case 61:
+			// 使用gl_FragCoord
+			useFragCoord(window);
+			break;
+		case 62:
+			// 使用gl_FrontFacing
+			useFrontFacing(window);
+			break;
+		case 63:
+			// 使用UBO uniform buffer object
+			useUBO(window);
+			break;
+
+
+
+
+
 
 		default:
 			break;

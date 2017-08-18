@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\gl-practice\3rdParty\glm\detail\glm.cpp" />
     <ClCompile Include="..\..\gl-practice\main.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\AdvancedGLSL.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicLighting.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMaterials.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\Blending.cpp" />
@@ -188,6 +189,7 @@
     <ClInclude Include="..\..\gl-practice\3rdParty\glm\vec4.hpp" />
     <ClInclude Include="..\..\gl-practice\3rdParty\glm\vector_relational.hpp" />
     <ClInclude Include="..\..\gl-practice\3rdParty\stb_image.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\AdvancedGLSL.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicLighting.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMaterials.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\Blending.h" />
