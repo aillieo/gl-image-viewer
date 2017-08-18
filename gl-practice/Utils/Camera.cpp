@@ -66,12 +66,25 @@ void Camera::ProcessMouseMovement(float xoffset, float yoffset, GLboolean constr
 
 void Camera::ProcessMouseScroll(float yoffset)
 {
-	if (Zoom >= 1.0f && Zoom <= 45.0f)
-		Zoom -= yoffset;
-	if (Zoom <= 1.0f)
-		Zoom = 1.0f;
-	if (Zoom >= 45.0f)
-		Zoom = 45.0f;
+
+	//  radians      degree
+	//  0.7854        45.0
+	//  0.0175         1.0 
+
+// 	if (Zoom >= 1.0f && Zoom <= 45.0f)
+// 		Zoom -= yoffset;
+// 	if (Zoom <= 1.0f)
+// 		Zoom = 1.0f;
+// 	if (Zoom >= 45.0f)
+// 		Zoom = 45.0f;
+
+	if (Zoom >= 0.0175 && Zoom <= 0.7854)
+ 		Zoom -= 0.0175 * yoffset;
+ 	if (Zoom <= 0.0175)
+ 		Zoom = 0.0175;
+ 	if (Zoom >= 0.7854)
+ 		Zoom = 0.7854;
+
 }
 
 
