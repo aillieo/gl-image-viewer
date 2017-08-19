@@ -19,7 +19,7 @@ public:
 
 	static unsigned int loadTexture(char const *filename);
     
-	static unsigned int loadCubeMap(char const *filepath);
+	static unsigned int loadCubeMap(char const *filepath, char const * file_ext);
 
 };
 

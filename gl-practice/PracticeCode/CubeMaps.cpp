@@ -152,9 +152,13 @@ int badSkyBox(GLFWwindow* window)
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
 	unsigned int textureCube = TextureLoader::loadTexture("lighting_maps/diffuseMap.png");
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake");
-
-
+    
+#ifdef __APPLE__
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake_1024", "png");
+#else
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake", "jpg");
+#endif
+    
 
 	// shader configuration
 	// --------------------
@@ -381,7 +385,12 @@ int rightSkyBox(GLFWwindow* window)
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
 	unsigned int textureCube = TextureLoader::loadTexture("lighting_maps/diffuseMap.png");
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake/");
+#ifdef __APPLE__
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake_1024", "png");
+#else
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake", "jpg");
+#endif
+    
 
 
 
@@ -610,7 +619,12 @@ int boxReflection(GLFWwindow* window)
 
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake/");
+#ifdef __APPLE__
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake_1024", "png");
+#else
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake", "jpg");
+#endif
+    
 
 
 
@@ -787,7 +801,12 @@ int modelReflection(GLFWwindow* window)
 
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake/");
+#ifdef __APPLE__
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake_1024", "png");
+#else
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake", "jpg");
+#endif
+    
 
 
 	shaderSkyBox->use();
@@ -1012,7 +1031,12 @@ int boxRefraction(GLFWwindow* window)
 
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake/");
+#ifdef __APPLE__
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake_1024", "png");
+#else
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake", "jpg");
+#endif
+    
 
 
 
@@ -1190,7 +1214,12 @@ int modelRefraction(GLFWwindow* window)
 
 	// load texture
 	glActiveTexture(GL_TEXTURE0);
-	unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake/");
+#ifdef __APPLE__
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake_1024", "png");
+#else
+    unsigned int textureSkyBox = TextureLoader::loadCubeMap("cube_maps/over_lake", "jpg");
+#endif
+    
 
 
 	shaderSkyBox->use();

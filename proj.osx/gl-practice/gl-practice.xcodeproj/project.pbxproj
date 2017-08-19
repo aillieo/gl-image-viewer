@@ -30,6 +30,7 @@
 		2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EA71F3202F500B7EC2F /* LightCasters.cpp */; };
 		2F917EAC1F335E5900B7EC2F /* MultipleLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */; };
 		2F917EC31F36F59F00B7EC2F /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */; };
+		2FDE13CC1F4832080043ACA3 /* AdvancedGLSL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */; };
 		2FE046031F2628F10067E589 /* SimpleTransform3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */; };
 		2FE046061F2629080067E589 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046041F2629080067E589 /* SceneManager.cpp */; };
 		2FE046091F2777A20067E589 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046071F2777A20067E589 /* Camera.cpp */; };
@@ -359,6 +360,8 @@
 		2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = MultipleLights.cpp; sourceTree = "<group>"; };
 		2F917EAB1F335E5900B7EC2F /* MultipleLights.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = MultipleLights.h; sourceTree = "<group>"; };
 		2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = lib/libassimp/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
+		2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedGLSL.cpp; sourceTree = "<group>"; };
+		2FDE13CB1F4832080043ACA3 /* AdvancedGLSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedGLSL.h; sourceTree = "<group>"; };
 		2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform3D.cpp; sourceTree = "<group>"; };
 		2FE046021F2628F10067E589 /* SimpleTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTransform3D.h; sourceTree = "<group>"; };
 		2FE046041F2629080067E589 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = "../../gl-practice/SceneManager.cpp"; sourceTree = "<group>"; };
@@ -742,6 +745,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */,
+				2FDE13CB1F4832080043ACA3 /* AdvancedGLSL.h */,
 				2F74096A1F44875600CA0FFB /* CubeMaps.cpp */,
 				2F74096B1F44875600CA0FFB /* CubeMaps.h */,
 				2F4A426B1F3F070B002166C7 /* FaceCulling.cpp */,
@@ -878,6 +883,7 @@
 				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
+				2FDE13CC1F4832080043ACA3 /* AdvancedGLSL.cpp in Sources */,
 				2F7720A01F389CA2007A480F /* Mesh.cpp in Sources */,
 				2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */,
 				2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */,

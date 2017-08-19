@@ -64,11 +64,12 @@ unsigned int TextureLoader::loadTexture(char const *filename)
 }
 
 
-unsigned int TextureLoader::loadCubeMap(char const *filepath)
+unsigned int TextureLoader::loadCubeMap(char const *filepath, char const * file_ext)
 {
 
 	std::vector<std::string> files;
 	std::string path = std::string(filepath);
+    std::string ext = std::string(file_ext);
 	if(path.back() != '/')
 	{
 		path.append("/");
@@ -82,12 +83,12 @@ unsigned int TextureLoader::loadCubeMap(char const *filepath)
 	// +Z (front) 
 	// -Z (back)
 
-	files.push_back(path + "right.jpg");
-	files.push_back(path + "left.jpg");
-	files.push_back(path + "top.jpg");
-	files.push_back(path + "bottom.jpg");
-	files.push_back(path + "back.jpg");
-	files.push_back(path + "front.jpg");
+	files.push_back(path +  "right." + ext);
+	files.push_back(path +   "left." + ext);
+	files.push_back(path +    "top." + ext);
+	files.push_back(path + "bottom." + ext);
+	files.push_back(path +   "back." + ext);
+	files.push_back(path +  "front." + ext);
 
 
 	unsigned int textureID;
