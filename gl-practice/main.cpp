@@ -20,6 +20,7 @@
 #include "PracticeCode/FrameBuffers.h"
 #include "PracticeCode/CubeMaps.h"
 #include "PracticeCode/AdvancedGLSL.h"
+#include "PracticeCode/UseGeometryShader.h"
 
 
 
@@ -299,12 +300,27 @@ int main()
 			// 使用UBO uniform buffer object
 			useUBO(window);
 			break;
+        case 64:
+            // 在几何着色器中把点变成线
+            gshPointToLine(window);
+            break;
+        case 65:
+            // 在几何着色器中把点变成“房子”
+            gshPointToHouse(window);
+            break;
+        case 66:
+            // 在几何着色器中把点变成不同颜色的“房子”
+            gshPointToHouseColor(window);
+            break;
+        case 67:
+            // 在几何着色器中把点变成带白色顶部的不同颜色的“房子”
+            gshPointToHouseColorWithWhite(window);
+            break;
 
 
 
-
-
-
+                
+                
 		default:
 			break;
 		}

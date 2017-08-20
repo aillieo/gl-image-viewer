@@ -39,6 +39,7 @@
 		2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6C61F2376C50033C7B6 /* HelloTriangle.cpp */; };
 		2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6C81F2376C50033C7B6 /* SimpleTexture.cpp */; };
 		2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */; };
+		2FE8A3D11F49D5A70084056C /* UseGeometryShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8A3CF1F49D5A70084056C /* UseGeometryShader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -378,6 +379,8 @@
 		2FE7E6C91F2376C50033C7B6 /* SimpleTexture.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTexture.h; sourceTree = "<group>"; };
 		2FE7E6CC1F2376DC0033C7B6 /* GLMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLMethod.cpp; sourceTree = "<group>"; };
 		2FE7E6CD1F2376DC0033C7B6 /* GLMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMethod.h; sourceTree = "<group>"; };
+		2FE8A3CF1F49D5A70084056C /* UseGeometryShader.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = UseGeometryShader.cpp; sourceTree = "<group>"; };
+		2FE8A3D01F49D5A70084056C /* UseGeometryShader.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = UseGeometryShader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -745,6 +748,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2FE8A3CF1F49D5A70084056C /* UseGeometryShader.cpp */,
+				2FE8A3D01F49D5A70084056C /* UseGeometryShader.h */,
 				2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */,
 				2FDE13CB1F4832080043ACA3 /* AdvancedGLSL.h */,
 				2F74096A1F44875600CA0FFB /* CubeMaps.cpp */,
@@ -875,6 +880,7 @@
 				2F5772A61F238DA6001F124E /* glm.cpp in Sources */,
 				2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */,
 				2F77209B1F389C92007A480F /* LoadModel.cpp in Sources */,
+				2FE8A3D11F49D5A70084056C /* UseGeometryShader.cpp in Sources */,
 				2FE046091F2777A20067E589 /* Camera.cpp in Sources */,
 				2F917EAC1F335E5900B7EC2F /* MultipleLights.cpp in Sources */,
 				2FE046121F2A28180067E589 /* BasicLighting.cpp in Sources */,
