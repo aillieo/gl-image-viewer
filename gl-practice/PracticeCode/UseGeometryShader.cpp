@@ -36,3 +36,15 @@ int gshPointToHouseColorWithWhite(GLFWwindow* window)
 {
     return 0;
 }
+
+// 使用着色器制造爆炸效果
+int gshExplode(GLFWwindow* window)
+{
+    return 0;
+}
+
+// 使用着色器显示法线
+int gshDisplayNormals(GLFWwindow* window)
+{
+    return 0;
+}

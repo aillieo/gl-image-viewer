@@ -316,7 +316,14 @@ int main()
             // 在几何着色器中把点变成带白色顶部的不同颜色的“房子”
             gshPointToHouseColorWithWhite(window);
             break;
-
+        case 68:
+            // 使用着色器制造爆炸效果
+            gshExplode(window);
+            break;
+        case 69:
+            // 使用着色器显示法线
+            gshDisplayNormals(window);
+            break;
 
 
                 
