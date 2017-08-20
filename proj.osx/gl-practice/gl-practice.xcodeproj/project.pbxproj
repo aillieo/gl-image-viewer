@@ -360,7 +360,7 @@
 		2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = MultipleLights.cpp; sourceTree = "<group>"; };
 		2F917EAB1F335E5900B7EC2F /* MultipleLights.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = MultipleLights.h; sourceTree = "<group>"; };
 		2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = lib/libassimp/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
-		2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedGLSL.cpp; sourceTree = "<group>"; };
+		2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedGLSL.cpp; sourceTree = "<group>"; };
 		2FDE13CB1F4832080043ACA3 /* AdvancedGLSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedGLSL.h; sourceTree = "<group>"; };
 		2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTransform3D.cpp; sourceTree = "<group>"; };
 		2FE046021F2628F10067E589 /* SimpleTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = SimpleTransform3D.h; sourceTree = "<group>"; };
