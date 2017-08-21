@@ -183,7 +183,7 @@ void Shader::init(const GLchar* vertexPath, const GLchar* geometryPath, const GL
         std::stringstream vShaderStream, gShaderStream, fShaderStream;
         // read file's buffer contents into streams
         vShaderStream << vShaderFile.rdbuf();
-        gShaderStream << vShaderFile.rdbuf();
+        gShaderStream << gShaderFile.rdbuf();
         fShaderStream << fShaderFile.rdbuf();
         // close file handlers
         vShaderFile.close();
@@ -191,7 +191,7 @@ void Shader::init(const GLchar* vertexPath, const GLchar* geometryPath, const GL
         fShaderFile.close();
         // convert stream into string
         vertexCode   = vShaderStream.str();
-        geometryCode = vShaderStream.str();
+        geometryCode = gShaderStream.str();
         fragmentCode = fShaderStream.str();
     }
     catch (std::ifstream::failure e)

@@ -586,7 +586,7 @@ int useUBO(GLFWwindow* window)
         
         glm::mat4 model;
         glm::mat4 view = camera->GetViewMatrix();
-        glm::mat4 projection = glm::perspective(camera->Zoom, (float)win_width / (float)win_height, 1.0f, 100.0f);
+        glm::mat4 projection = glm::perspective(camera->Zoom, (float)win_width / (float)win_height, 0.1f, 100.0f);
         
         // set the view and projection matrix in the uniform block - we only have to do this once per loop iteration.
         glBindBuffer(GL_UNIFORM_BUFFER, UBO);
