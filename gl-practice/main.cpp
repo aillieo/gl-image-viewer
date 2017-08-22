@@ -21,6 +21,7 @@
 #include "PracticeCode/CubeMaps.h"
 #include "PracticeCode/AdvancedGLSL.h"
 #include "PracticeCode/UseGeometryShader.h"
+#include "PracticeCode/Instancing.h"
 
 
 
@@ -324,6 +325,26 @@ int main()
             // 使用着色器显示法线
             gshDisplayNormals(window);
             break;
+		case 70:
+			// 阵列 不使用Instancing
+			arrayWithoutInstancing(window);
+			break;
+		case 71:
+			// 阵列 使用Instancing
+			arrayWithInstancing(window);
+			break;
+		case 72:
+			// 阵列 使用Instancing 尺寸渐变
+			arrayWithInstancingScaling(window);
+			break;
+		case 73:
+			// 行星带 不使用Instancing
+			asteroidFieldWithoutInstancing(window);
+			break;
+		case 74:
+			// 行星带 使用Instancing
+			asteroidFieldWithInstancing(window);
+			break;
 
 
                 
