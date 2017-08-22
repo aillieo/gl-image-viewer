@@ -71,7 +71,7 @@ int loadModel(GLFWwindow* window)
         shader->use();
         
         // view/projection transformations
-        glm::mat4 projection = glm::perspective(glm::radians(camera->Zoom), (float)win_width / (float)win_height, 0.1f, 100.0f);
+        glm::mat4 projection = glm::perspective(camera->Zoom, (float)win_width / (float)win_height, 0.1f, 100.0f);
         glm::mat4 view = camera->GetViewMatrix();
         shader->setMat4("projection", projection);
         shader->setMat4("view", view);
