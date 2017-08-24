@@ -1,5 +1,6 @@
 #include "GLMethod.h"
 #include "../SceneManager.h"
+#include <iostream>
 
 int LastPressedKey = 0;
 
@@ -7,6 +8,9 @@ Camera* currentCamera = nullptr;
 bool firstMouse = true;
 float lastX = 0.0f;
 float lastY = 0.0f;
+
+float frameBaseTime = glfwGetTime();
+int frames = 0;
 
 GLFWwindow* createWindow(int width, int height)
 {
@@ -160,4 +164,17 @@ void unbindCamera(GLFWwindow* window)
 {
 	currentCamera = nullptr;
 
+}
+
+void printFPS()
+{
+	frames ++ ;
+	if(frames > 1000)
+	{
+		float currentTime = glfwGetTime();
+		float fps = frames/ (currentTime - frameBaseTime);
+		std::cout << "FPS: " << fps << std::endl;
+		frames = 0;
+		frameBaseTime = currentTime;
+	}
 }
