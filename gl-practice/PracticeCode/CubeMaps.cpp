@@ -729,7 +729,7 @@ int modelReflection(GLFWwindow* window)
 	Shader* shaderModel = new Shader("CubeMaps/shader4.vsh","CubeMaps/shader4.fsh");
 	Shader* shaderSkyBox = new Shader("CubeMaps/shader2.vsh","CubeMaps/shader2.fsh");
 
-	Model* modelObj = new Model("../../gl-practice/_models/nanosuit/nanosuit.obj");
+	Model* modelObj = new Model("nanosuit/nanosuit.obj");
 
 	float skyboxVertices[] = {
 		// positions          
@@ -1142,7 +1142,7 @@ int modelRefraction(GLFWwindow* window)
 	Shader* shaderModel = new Shader("CubeMaps/shader6.vsh","CubeMaps/shader6.fsh");
 	Shader* shaderSkyBox = new Shader("CubeMaps/shader2.vsh","CubeMaps/shader2.fsh");
 
-	Model* modelObj = new Model("../../gl-practice/_models/nanosuit/nanosuit.obj");
+	Model* modelObj = new Model("nanosuit/nanosuit.obj");
 
 	float skyboxVertices[] = {
 		// positions          

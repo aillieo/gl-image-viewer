@@ -308,7 +308,7 @@ int gshExplode(GLFWwindow* window)
 
 	// load models
 	// -----------
-	Model* modelObj = new Model("../../gl-practice/_models/nanosuit/nanosuit.obj");
+	Model* modelObj = new Model("nanosuit/nanosuit.obj");
 
 	Camera* camera = new Camera(glm::vec3(0.0f, 0.0f, 3.0f),glm::vec3(0.0f, 1.0f, 0.0f),-90.0,0.0f);
 	float deltaTime = 0.0f;
@@ -395,7 +395,7 @@ int gshDisplayNormals(GLFWwindow* window)
 
 	// load models
 	// -----------
-	Model* modelObj = new Model("../../gl-practice/_models/nanosuit/nanosuit.obj");
+	Model* modelObj = new Model("nanosuit/nanosuit.obj");
 
 	Camera* camera = new Camera(glm::vec3(0.0f, 0.0f, 3.0f),glm::vec3(0.0f, 1.0f, 0.0f),-90.0,0.0f);
 	float deltaTime = 0.0f;

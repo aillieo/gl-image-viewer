@@ -9,7 +9,10 @@ using std::endl;
 Model::Model(string const &path, bool gamma)
 :gammaCorrection(gamma)
 {
-    loadModel(path);
+	const char* modelPath = "../../gl-practice/_models/";
+
+	string fullpath = string(modelPath).append(path);
+    loadModel(fullpath);
 }
 
 // draws the model, and thus all its meshes
