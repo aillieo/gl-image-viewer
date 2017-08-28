@@ -169,7 +169,7 @@ void unbindCamera(GLFWwindow* window)
 void printFPS()
 {
 	frames ++ ;
-	if(frames > 1000)
+	if(frames > 120)
 	{
 		float currentTime = glfwGetTime();
 		float fps = frames/ (currentTime - frameBaseTime);
