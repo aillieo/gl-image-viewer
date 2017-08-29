@@ -455,6 +455,8 @@ int asteroidFieldWithoutInstancing(GLFWwindow* window)
 
 	delete planet;
 	delete rock;
+
+	unbindCamera(window);
 	delete camera;
 
 	delete[] modelMatrices;
@@ -474,7 +476,8 @@ int asteroidFieldWithInstancing(GLFWwindow* window)
 	glfwGetWindowSize(window,&win_width,&win_height);
 
 
-	Shader* shader = new Shader("Instancing/shader5.vsh","Instancing/shader5.fsh");
+	Shader* shaderRock = new Shader("Instancing/shader5.vsh","Instancing/shader5.fsh");
+	Shader* shaderPlanet = new Shader("Instancing/shader4.vsh","Instancing/shader4.fsh");
 
 	// Load models
 	Model* rock = new Model("rock/rock.obj");
@@ -529,7 +532,6 @@ int asteroidFieldWithInstancing(GLFWwindow* window)
 
 		printFPS();
 
-
 		float currentFrame = glfwGetTime();
 		deltaTime = currentFrame - lastFrame;
 		lastFrame = currentFrame;
@@ -544,23 +546,30 @@ int asteroidFieldWithInstancing(GLFWwindow* window)
 
 		// draw triangle
 		// Add transformation matrices
-		shader->use();
+		shaderPlanet->use();
 
 		glm::mat4 view = camera->GetViewMatrix();
 		glm::mat4 projection = glm::perspective(camera->Zoom, (float)win_width / (float)win_height, 0.1f, 10000.0f);
-		shader->setMat4("view", view);
-		shader->setMat4("projection", projection);
+		shaderPlanet->setMat4("view", view);
+		shaderPlanet->setMat4("projection", projection);
+
 
 
 		// Draw Planet
 		glm::mat4 model;
 		model = glm::translate(model, glm::vec3(0.0f, -3.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(4.0f, 4.0f, 4.0f));
-		shader->setMat4("model", model);
-		planet->Draw(*shader);
+		shaderPlanet->setMat4("model", model);
+		planet->Draw(*shaderPlanet);
+
+
+
+		shaderRock->use();
+		shaderRock->setMat4("view", view);
+		shaderRock->setMat4("projection", projection);
 
 		// Draw meteorites
-		rock->drawAsinstanced(shader, amount);
+		rock->drawAsinstanced(shaderRock, amount);
 
 
 		// 检查并调用事件，交换缓冲
@@ -570,10 +579,12 @@ int asteroidFieldWithInstancing(GLFWwindow* window)
 
 
 
-	delete shader;
+	delete shaderRock;
+	delete shaderPlanet;
 
 	delete planet;
 	delete rock;
+	unbindCamera(window);
 	delete camera;
 
 	delete[] modelMatrices;
