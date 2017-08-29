@@ -22,6 +22,7 @@
 #include "PracticeCode/AdvancedGLSL.h"
 #include "PracticeCode/UseGeometryShader.h"
 #include "PracticeCode/Instancing.h"
+#include "PracticeCode/AntiAliasing.h"
 
 
 
@@ -35,7 +36,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 74;
+	SceneManager::sceneIndexMax = 73;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -344,6 +345,22 @@ int main()
 		case 74:
 			// 行星带 使用Instancing
 			asteroidFieldWithInstancing(window);
+			break;
+		case 75:
+			// 不使用抗锯齿
+			cubeWithoutAA(window);
+			break;
+		case 76:
+			// 使用多重采样抗锯齿
+			cubeWithMSAA(window);
+			break;
+		case 77:
+			// 使用离屏多重采样抗锯齿
+			cubeWithOffScreenMSAA(window);
+			break;
+		case 78:
+			// 使用自定义抗锯齿算法
+			cubeCustomAAAlgorithm(window);
 			break;
 
 
