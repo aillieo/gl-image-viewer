@@ -184,3 +184,20 @@ vector<Texture> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType type,
     return textures;
 }
 
+
+void Model::setupInstanceattribute(GLuint index, GLuint instanceAmount, GLsizeiptr size, const void* data, GLuint divisor)
+{
+	for(GLuint i = 0; i < meshes.size(); i++)
+	{
+		meshes[i].setupInstanceattribute(index, instanceAmount, size, data, divisor);
+	}
+
+}
+
+
+void Model::drawAsinstanced(Shader* shader, int amount)
+{
+	for(unsigned int i = 0; i < meshes.size(); i++)
+		meshes[i].drawAsinstanced(shader, amount);
+
+}

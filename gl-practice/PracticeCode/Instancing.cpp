@@ -453,6 +453,12 @@ int asteroidFieldWithoutInstancing(GLFWwindow* window)
 
 	delete shader;
 
+	delete planet;
+	delete rock;
+	delete camera;
+
+	delete[] modelMatrices;
+	modelMatrices= nullptr;
 
 	return 0; 
 }
@@ -461,7 +467,119 @@ int asteroidFieldWithoutInstancing(GLFWwindow* window)
 int asteroidFieldWithInstancing(GLFWwindow* window)
 {
 
-	return 0;
+	glEnable(GL_DEPTH_TEST);
+
+
+	int win_width,win_height;
+	glfwGetWindowSize(window,&win_width,&win_height);
+
+
+	Shader* shader = new Shader("Instancing/shader5.vsh","Instancing/shader5.fsh");
+
+	// Load models
+	Model* rock = new Model("rock/rock.obj");
+	Model* planet = new Model("planet/planet.obj");
+
+	Camera* camera = new Camera(glm::vec3(0.0f, 0.0f, 55.0f),glm::vec3(0.0f, 1.0f, 0.0f),-90.0,0.0f);
+	float deltaTime = 0.0f;
+	float lastFrame = 0.0f;
+	bindCameraToWindow(window, camera);
+
+
+	// Generate a large list of semi-random model transformation matrices
+	GLuint amount = 1000;
+	glm::mat4* modelMatrices;
+	modelMatrices = new glm::mat4[amount];
+	srand(glfwGetTime()); // initialize random seed	
+	GLfloat radius = 50.0;
+	GLfloat offset = 2.5f;
+	for(GLuint i = 0; i < amount; i++)
+	{
+		glm::mat4 model;
+		// 1. Translation: displace along circle with 'radius' in range [-offset, offset]
+		GLfloat angle = (GLfloat)i / (GLfloat)amount * 360.0f;
+		GLfloat displacement = (rand() % (GLint)(2 * offset * 100)) / 100.0f - offset;
+		GLfloat x = sin(angle) * radius + displacement;
+		displacement = (rand() % (GLint)(2 * offset * 100)) / 100.0f - offset;
+		GLfloat y = displacement * 0.4f; // Keep height of asteroid field smaller compared to width of x and z
+		displacement = (rand() % (GLint)(2 * offset * 100)) / 100.0f - offset;
+		GLfloat z = cos(angle) * radius + displacement;
+		model = glm::translate(model, glm::vec3(x, y, z));
+
+		// 2. Scale: Scale between 0.05 and 0.25f
+		GLfloat scale = (rand() % 20) / 100.0f + 0.05;
+		model = glm::scale(model, glm::vec3(scale));		
+
+		// 3. Rotation: add random rotation around a (semi)randomly picked rotation axis vector
+		GLfloat rotAngle = (rand() % 360);
+		model = glm::rotate(model, rotAngle, glm::vec3(0.4f, 0.6f, 0.8f));
+
+		// 4. Now add to list of matrices
+		modelMatrices[i] = model;
+	}
+
+
+	rock->setupInstanceattribute(5,1000,sizeof(glm::mat4), &modelMatrices[0], 1);
+
+
+
+	// 渲染循环
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
+	{
+
+		printFPS();
+
+
+		float currentFrame = glfwGetTime();
+		deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
+
+		// 输入
+		processInput(window);
+		processInput(window, camera, deltaTime);
+
+		// 渲染指令
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+		// draw triangle
+		// Add transformation matrices
+		shader->use();
+
+		glm::mat4 view = camera->GetViewMatrix();
+		glm::mat4 projection = glm::perspective(camera->Zoom, (float)win_width / (float)win_height, 0.1f, 10000.0f);
+		shader->setMat4("view", view);
+		shader->setMat4("projection", projection);
+
+
+		// Draw Planet
+		glm::mat4 model;
+		model = glm::translate(model, glm::vec3(0.0f, -3.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(4.0f, 4.0f, 4.0f));
+		shader->setMat4("model", model);
+		planet->Draw(*shader);
+
+		// Draw meteorites
+		rock->drawAsinstanced(shader, amount);
+
+
+		// 检查并调用事件，交换缓冲
+		glfwPollEvents();
+		glfwSwapBuffers(window);
+	}
+
+
+
+	delete shader;
+
+	delete planet;
+	delete rock;
+	delete camera;
+
+	delete[] modelMatrices;
+	modelMatrices= nullptr;
+
+	return 0; 
 }
 
 

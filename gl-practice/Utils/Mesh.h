@@ -41,8 +41,9 @@ public:
     vector<Vertex> vertices;
     vector<unsigned int> indices;
     vector<Texture> textures;
-    unsigned int VAO;
-    
+
+	void setupInstanceattribute(GLuint index, GLuint instanceAmount, GLsizeiptr size, const void* data, GLuint divisor);
+
     // constructor
     Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures)
     {
@@ -56,10 +57,13 @@ public:
     
     // render the mesh
     void Draw(Shader shader);
+
+	void drawAsinstanced(Shader* shader, int amount);
     
 private:
     
     /*  Render data  */
+	unsigned int VAO;
     unsigned int VBO, EBO;
     
     // initializes VAO VBO EBO

@@ -33,6 +33,10 @@ public:
     
     // draws the model, and thus all its meshes
     void Draw(Shader shader);
+
+	void drawAsinstanced(Shader* shader, int amount);
+
+	void setupInstanceattribute(GLuint index, GLuint instanceAmount, GLsizeiptr size, const void* data, GLuint divisor);
     
 private:
 
