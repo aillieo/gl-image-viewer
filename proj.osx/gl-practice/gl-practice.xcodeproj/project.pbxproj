@@ -10,6 +10,8 @@
 		2F0774C61F24CF5F00D5F003 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F0774C41F24CF5F00D5F003 /* TextureLoader.cpp */; };
 		2F0774C91F24D2F400D5F003 /* SimpleTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F0774C71F24D2F400D5F003 /* SimpleTransform.cpp */; };
 		2F092FF11F39ECCB004B8A5E /* DepthTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */; };
+		2F1793251F599B780084EC5C /* AntiAliasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1793211F599B780084EC5C /* AntiAliasing.cpp */; };
+		2F1793261F599B780084EC5C /* Instancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1793231F599B780084EC5C /* Instancing.cpp */; };
 		2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */; };
 		2F3E970E1F3B3FEF000DAB5F /* StencilTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E970C1F3B3FEF000DAB5F /* StencilTesting.cpp */; };
 		2F3E97111F3C8E95000DAB5F /* Blending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E970F1F3C8E95000DAB5F /* Blending.cpp */; };
@@ -61,6 +63,10 @@
 		2F0774C81F24D2F400D5F003 /* SimpleTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTransform.h; sourceTree = "<group>"; };
 		2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = DepthTesting.cpp; sourceTree = "<group>"; };
 		2F092FF01F39ECCB004B8A5E /* DepthTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthTesting.h; sourceTree = "<group>"; };
+		2F1793211F599B780084EC5C /* AntiAliasing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AntiAliasing.cpp; sourceTree = "<group>"; };
+		2F1793221F599B780084EC5C /* AntiAliasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntiAliasing.h; sourceTree = "<group>"; };
+		2F1793231F599B780084EC5C /* Instancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Instancing.cpp; sourceTree = "<group>"; };
+		2F1793241F599B780084EC5C /* Instancing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instancing.h; sourceTree = "<group>"; };
 		2F2D9B1A1F1E5548009DD000 /* SimpleShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleShader.cpp; sourceTree = "<group>"; };
 		2F2D9B1B1F1E5548009DD000 /* SimpleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleShader.h; sourceTree = "<group>"; };
 		2F3E970C1F3B3FEF000DAB5F /* StencilTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = StencilTesting.cpp; sourceTree = "<group>"; };
@@ -748,6 +754,10 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F1793211F599B780084EC5C /* AntiAliasing.cpp */,
+				2F1793221F599B780084EC5C /* AntiAliasing.h */,
+				2F1793231F599B780084EC5C /* Instancing.cpp */,
+				2F1793241F599B780084EC5C /* Instancing.h */,
 				2FE8A3CF1F49D5A70084056C /* UseGeometryShader.cpp */,
 				2FE8A3D01F49D5A70084056C /* UseGeometryShader.h */,
 				2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */,
@@ -896,10 +906,12 @@
 				2FE046061F2629080067E589 /* SceneManager.cpp in Sources */,
 				2F4A42701F3F070B002166C7 /* FrameBuffers.cpp in Sources */,
 				2F3E970E1F3B3FEF000DAB5F /* StencilTesting.cpp in Sources */,
+				2F1793251F599B780084EC5C /* AntiAliasing.cpp in Sources */,
 				2F7720A11F389CA2007A480F /* Model.cpp in Sources */,
 				2F6F2A891F1BABBD00BFF395 /* main.cpp in Sources */,
 				2FE7E6CE1F2376DC0033C7B6 /* GLMethod.cpp in Sources */,
 				2F74096C1F44875600CA0FFB /* CubeMaps.cpp in Sources */,
+				2F1793261F599B780084EC5C /* Instancing.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
