@@ -36,7 +36,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 76;
+	SceneManager::sceneIndexMax = 77;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -355,10 +355,14 @@ int main()
 			cubeWithMSAA(window);
 			break;
 		case 77:
-			// 使用离屏多重采样抗锯齿
+			// 使用离屏多重采样抗锯齿 绘制到frameBuffer再blit到屏幕
 			cubeWithOffScreenMSAA(window);
 			break;
 		case 78:
+			// 使用离屏多重采样抗锯齿 通过帧缓冲纹理
+			cubeWithOffScreenMSAATexture(window);
+			break;
+		case 79:
 			// 使用自定义抗锯齿算法
 			cubeCustomAAAlgorithm(window);
 			break;
