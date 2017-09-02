@@ -27,6 +27,7 @@
 		2F77209B1F389C92007A480F /* LoadModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7720991F389C92007A480F /* LoadModel.cpp */; };
 		2F7720A01F389CA2007A480F /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F77209C1F389CA2007A480F /* Mesh.cpp */; };
 		2F7720A11F389CA2007A480F /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F77209E1F389CA2007A480F /* Model.cpp */; };
+		2F78CB901F5AF1590055FD1A /* AdvancedLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F78CB8E1F5AF1590055FD1A /* AdvancedLighting.cpp */; };
 		2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7DFCB91F2E13CC0015663C /* BasicMaterials.cpp */; };
 		2F8638831F30A8AF00C31699 /* LightingMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F8638811F30A8AF00C31699 /* LightingMaps.cpp */; };
 		2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EA71F3202F500B7EC2F /* LightCasters.cpp */; };
@@ -358,6 +359,8 @@
 		2F77209D1F389CA2007A480F /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
 		2F77209E1F389CA2007A480F /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		2F77209F1F389CA2007A480F /* Model.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		2F78CB8E1F5AF1590055FD1A /* AdvancedLighting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedLighting.cpp; sourceTree = "<group>"; };
+		2F78CB8F1F5AF1590055FD1A /* AdvancedLighting.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = AdvancedLighting.h; sourceTree = "<group>"; };
 		2F7DFCB91F2E13CC0015663C /* BasicMaterials.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = BasicMaterials.cpp; sourceTree = "<group>"; };
 		2F7DFCBA1F2E13CC0015663C /* BasicMaterials.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = BasicMaterials.h; sourceTree = "<group>"; };
 		2F8638811F30A8AF00C31699 /* LightingMaps.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = LightingMaps.cpp; sourceTree = "<group>"; };
@@ -754,6 +757,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F78CB8E1F5AF1590055FD1A /* AdvancedLighting.cpp */,
+				2F78CB8F1F5AF1590055FD1A /* AdvancedLighting.h */,
 				2F1793211F599B780084EC5C /* AntiAliasing.cpp */,
 				2F1793221F599B780084EC5C /* AntiAliasing.h */,
 				2F1793231F599B780084EC5C /* Instancing.cpp */,
@@ -898,6 +903,7 @@
 				2F8638831F30A8AF00C31699 /* LightingMaps.cpp in Sources */,
 				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
+				2F78CB901F5AF1590055FD1A /* AdvancedLighting.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
 				2FDE13CC1F4832080043ACA3 /* AdvancedGLSL.cpp in Sources */,
 				2F7720A01F389CA2007A480F /* Mesh.cpp in Sources */,

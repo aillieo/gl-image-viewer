@@ -23,6 +23,7 @@
 #include "PracticeCode/UseGeometryShader.h"
 #include "PracticeCode/Instancing.h"
 #include "PracticeCode/AntiAliasing.h"
+#include "PracticeCode/AdvancedLighting.h"
 
 
 
@@ -366,7 +367,15 @@ int main()
 			// 使用自定义抗锯齿算法
 			cubeCustomAAAlgorithm(window);
 			break;
-
+        case 80:
+            // 点光源照地板 使用Phong
+            floorPhong(window);
+            break;
+        case 81:
+            // 点光源照地板 使用Blinn-Phong
+            floorBlinnPhong(window);
+            break;
+            
 
                 
                 
