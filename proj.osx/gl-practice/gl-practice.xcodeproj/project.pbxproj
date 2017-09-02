@@ -63,7 +63,7 @@
 		2F0774C81F24D2F400D5F003 /* SimpleTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTransform.h; sourceTree = "<group>"; };
 		2F092FEF1F39ECCB004B8A5E /* DepthTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = DepthTesting.cpp; sourceTree = "<group>"; };
 		2F092FF01F39ECCB004B8A5E /* DepthTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthTesting.h; sourceTree = "<group>"; };
-		2F1793211F599B780084EC5C /* AntiAliasing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AntiAliasing.cpp; sourceTree = "<group>"; };
+		2F1793211F599B780084EC5C /* AntiAliasing.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = AntiAliasing.cpp; sourceTree = "<group>"; };
 		2F1793221F599B780084EC5C /* AntiAliasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntiAliasing.h; sourceTree = "<group>"; };
 		2F1793231F599B780084EC5C /* Instancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Instancing.cpp; sourceTree = "<group>"; };
 		2F1793241F599B780084EC5C /* Instancing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instancing.h; sourceTree = "<group>"; };
