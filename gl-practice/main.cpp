@@ -24,6 +24,7 @@
 #include "PracticeCode/Instancing.h"
 #include "PracticeCode/AntiAliasing.h"
 #include "PracticeCode/AdvancedLighting.h"
+#include "PracticeCode/ShadowMapping.h"
 
 
 
@@ -375,8 +376,30 @@ int main()
             // 点光源照地板 使用Blinn-Phong
             floorBlinnPhong(window);
             break;
-            
-
+        case 82:
+            // 用于绘制阴影的深度可视化
+            depthMapForShadow(window);
+            break;
+        case 83:
+            // 绘制阴影-1 初步实现
+            renderingShadow1Raw(window);
+            break;
+        case 84:
+            // 绘制阴影-2 使用偏移减少阴影失真
+            renderingShadow2Bias(window);
+            break;
+        case 85:
+            // 绘制阴影-3 使用面剔除剔除正面 以避免悬浮
+            renderingShadow3CullFront(window);
+            break;
+        case 86:
+            // 绘制阴影-4 使用shader中增加判断 以避免采样过多over-sampling
+            renderingShadow4FixOverSampling(window);
+            break;
+        case 87:
+            // 绘制阴影-final 使用PCF(percentage-closer filtering)
+            renderingShadowsWithPCF(window);
+            break;
                 
                 
 		default:

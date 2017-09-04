@@ -24,6 +24,7 @@
 		2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */; };
 		2F6F2A931F1BB35000BFF395 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */; };
 		2F74096C1F44875600CA0FFB /* CubeMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F74096A1F44875600CA0FFB /* CubeMaps.cpp */; };
+		2F7560A41F5C3DB60073D047 /* ShadowMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7560A21F5C3DB60073D047 /* ShadowMapping.cpp */; };
 		2F77209B1F389C92007A480F /* LoadModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7720991F389C92007A480F /* LoadModel.cpp */; };
 		2F7720A01F389CA2007A480F /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F77209C1F389CA2007A480F /* Mesh.cpp */; };
 		2F7720A11F389CA2007A480F /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F77209E1F389CA2007A480F /* Model.cpp */; };
@@ -353,6 +354,8 @@
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		2F74096A1F44875600CA0FFB /* CubeMaps.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = CubeMaps.cpp; sourceTree = "<group>"; };
 		2F74096B1F44875600CA0FFB /* CubeMaps.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = CubeMaps.h; sourceTree = "<group>"; };
+		2F7560A21F5C3DB60073D047 /* ShadowMapping.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowMapping.cpp; sourceTree = "<group>"; };
+		2F7560A31F5C3DB60073D047 /* ShadowMapping.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = ShadowMapping.h; sourceTree = "<group>"; };
 		2F7720991F389C92007A480F /* LoadModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadModel.cpp; sourceTree = "<group>"; };
 		2F77209A1F389C92007A480F /* LoadModel.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = LoadModel.h; sourceTree = "<group>"; };
 		2F77209C1F389CA2007A480F /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
@@ -757,6 +760,8 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F7560A21F5C3DB60073D047 /* ShadowMapping.cpp */,
+				2F7560A31F5C3DB60073D047 /* ShadowMapping.h */,
 				2F78CB8E1F5AF1590055FD1A /* AdvancedLighting.cpp */,
 				2F78CB8F1F5AF1590055FD1A /* AdvancedLighting.h */,
 				2F1793211F599B780084EC5C /* AntiAliasing.cpp */,
@@ -905,6 +910,7 @@
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F78CB901F5AF1590055FD1A /* AdvancedLighting.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
+				2F7560A41F5C3DB60073D047 /* ShadowMapping.cpp in Sources */,
 				2FDE13CC1F4832080043ACA3 /* AdvancedGLSL.cpp in Sources */,
 				2F7720A01F389CA2007A480F /* Mesh.cpp in Sources */,
 				2F7DFCBB1F2E13CC0015663C /* BasicMaterials.cpp in Sources */,
