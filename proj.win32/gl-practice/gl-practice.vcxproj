@@ -14,6 +14,7 @@
     <ClCompile Include="..\..\gl-practice\3rdParty\glm\detail\glm.cpp" />
     <ClCompile Include="..\..\gl-practice\main.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\AdvancedGLSL.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\AdvancedLighting.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\AntiAliasing.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicLighting.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\BasicMaterials.cpp" />
@@ -28,6 +29,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightingMaps.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LoadModel.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\MultipleLights.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\ShadowMapping.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleCamera.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleShader.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp" />
@@ -193,6 +195,7 @@
     <ClInclude Include="..\..\gl-practice\3rdParty\glm\vector_relational.hpp" />
     <ClInclude Include="..\..\gl-practice\3rdParty\stb_image.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\AdvancedGLSL.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\AdvancedLighting.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\AntiAliasing.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicLighting.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\BasicMaterials.h" />
@@ -207,6 +210,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightingMaps.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LoadModel.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\MultipleLights.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\ShadowMapping.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleCamera.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleShader.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h" />

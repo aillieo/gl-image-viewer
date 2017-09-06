@@ -120,6 +120,12 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\AntiAliasing.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\ShadowMapping.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\AdvancedLighting.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -651,6 +657,12 @@
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\AntiAliasing.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\ShadowMapping.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\AdvancedLighting.h">
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>
