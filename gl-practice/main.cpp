@@ -38,7 +38,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 84;
+	SceneManager::sceneIndexMax = 86;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -389,11 +389,11 @@ int main()
             renderingShadow2Bias(window);
             break;
         case 85:
-            // 绘制阴影-3 使用面剔除剔除正面 以避免悬浮
+            // 绘制阴影-3 使用面剔除剔除正面 以避免悬浮(peter panning)
             renderingShadow3CullFront(window);
             break;
         case 86:
-            // 绘制阴影-4 使用shader中增加判断 以避免采样过多over-sampling
+            // 绘制阴影-4 修改texture边界类型并在shader中增加判断 以避免采样过多over-sampling
             renderingShadow4FixOverSampling(window);
             break;
         case 87:
