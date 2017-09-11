@@ -25,6 +25,7 @@
 #include "PracticeCode/AntiAliasing.h"
 #include "PracticeCode/AdvancedLighting.h"
 #include "PracticeCode/ShadowMapping.h"
+#include "PracticeCode/PointShadows.h"
 
 
 
@@ -399,8 +400,21 @@ int main()
         case 87:
             // 绘制阴影-final 使用PCF(percentage-closer filtering)
             renderingShadowsWithPCF(window);
-            break;
-                
+			break;
+		case 88:
+			// 绘制点光源的阴影
+			renderPointShadow(window);
+			break;
+		case 89:
+			// 展示点光源阴影的深度贴图
+			renderPointShadowShowDepth(window);
+			break;
+		case 90:
+			// 绘制点光源阴影并使用PCF
+			renderPointShadowPCF(window);
+			break;
+
+
                 
 		default:
 			break;
