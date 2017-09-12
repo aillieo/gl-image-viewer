@@ -17,5 +17,7 @@ proj.win32/gl-practice/Release/*
 
 #xcode
 
+*.xcuserstate
+
 .DS_Store
 
