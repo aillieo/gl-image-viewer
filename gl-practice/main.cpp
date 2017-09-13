@@ -26,6 +26,7 @@
 #include "PracticeCode/AdvancedLighting.h"
 #include "PracticeCode/ShadowMapping.h"
 #include "PracticeCode/PointShadows.h"
+#include "PracticeCode/NormalMapping.h"
 
 
 
@@ -413,9 +414,18 @@ int main()
 			// 绘制点光源阴影并使用PCF
 			renderPointShadowPCF(window);
 			break;
+		case 91:
+			// 法线贴图 将TBN传给片段着色器
+			normalMappingTBN1(window);
+			break;
+		case 92:
+			// 法线贴图 在片段着色器中使用切线空间计算光照
+			normalMappingTBN2(window);
+			break;
+
+            
 
 
-                
 		default:
 			break;
 		}

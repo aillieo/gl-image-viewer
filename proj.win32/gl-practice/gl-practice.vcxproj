@@ -29,6 +29,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightingMaps.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LoadModel.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\MultipleLights.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\NormalMapping.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\PointShadows.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\ShadowMapping.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleCamera.cpp" />
@@ -211,6 +212,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightingMaps.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LoadModel.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\MultipleLights.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\NormalMapping.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\PointShadows.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\ShadowMapping.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleCamera.h" />
