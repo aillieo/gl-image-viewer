@@ -39,7 +39,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 89;
+	SceneManager::sceneIndexMax = 90;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
