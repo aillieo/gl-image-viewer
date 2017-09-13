@@ -13,7 +13,7 @@
 #include "../SceneManager.h"
 
 
-void _PS_renderScene(Shader* shader, int VAOCube, int textureCube, int VAOFloor, int texturePlane);
+void _PS_renderScene(Shader* shader, int VAOCube, int textureCube, int texturePlane, int textureDepth);
 
 // 绘制点光源的阴影
 int renderPointShadow(GLFWwindow* window)
@@ -178,7 +178,7 @@ int renderPointShadow(GLFWwindow* window)
 		GLfloat near_plane = 1.0f;
 		GLfloat far_plane = 25.0f;
 		
-		glm::mat4 shadowProj = glm::perspective(90.0f, aspect, near_plane, far_plane);
+		glm::mat4 shadowProj = glm::perspective(glm::radians(90.0f), aspect, near_plane, far_plane);
 		std::vector<glm::mat4> shadowTransforms;
 		shadowTransforms.push_back(shadowProj * glm::lookAt(lightPos, lightPos + glm::vec3( 1.0,  0.0,  0.0), glm::vec3(0.0, -1.0,  0.0)));
 		shadowTransforms.push_back(shadowProj * glm::lookAt(lightPos, lightPos + glm::vec3(-1.0,  0.0,  0.0), glm::vec3(0.0, -1.0,  0.0)));
