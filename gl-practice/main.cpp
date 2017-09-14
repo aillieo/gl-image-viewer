@@ -27,6 +27,7 @@
 #include "PracticeCode/ShadowMapping.h"
 #include "PracticeCode/PointShadows.h"
 #include "PracticeCode/NormalMapping.h"
+#include "PracticeCode/ParallaxMapping.h"
 
 
 
@@ -422,6 +423,22 @@ int main()
 			// 法线贴图 在片段着色器中使用切线空间计算光照
 			normalMappingTBN2(window);
 			break;
+		case 93:
+			// 视差贴图
+			parallaxMapping(window);
+			break;
+		case 94:
+			// 视差贴图 陡峭视差映射
+			parallaxMappingSteep(window);
+			break;
+		case 95:
+			// 视差贴图 视差遮蔽映射
+			parallaxMappingOcclusion(window);
+			break;
+
+
+
+
 
             
 
