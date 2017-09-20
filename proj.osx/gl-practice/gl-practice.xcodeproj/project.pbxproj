@@ -34,6 +34,8 @@
 		2F917EA91F3202F500B7EC2F /* LightCasters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EA71F3202F500B7EC2F /* LightCasters.cpp */; };
 		2F917EAC1F335E5900B7EC2F /* MultipleLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */; };
 		2F917EC31F36F59F00B7EC2F /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */; };
+		2FA352A01F6C16E3006527C7 /* NormalMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3529C1F6C16E3006527C7 /* NormalMapping.cpp */; };
+		2FA352A11F6C16E3006527C7 /* ParallaxMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3529E1F6C16E3006527C7 /* ParallaxMapping.cpp */; };
 		2FBB74651F6821AB00BD1217 /* PointShadows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB74631F6821AB00BD1217 /* PointShadows.cpp */; };
 		2FDE13CC1F4832080043ACA3 /* AdvancedGLSL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */; };
 		2FE046031F2628F10067E589 /* SimpleTransform3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE046011F2628F10067E589 /* SimpleTransform3D.cpp */; };
@@ -374,6 +376,10 @@
 		2F917EAA1F335E5900B7EC2F /* MultipleLights.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = MultipleLights.cpp; sourceTree = "<group>"; };
 		2F917EAB1F335E5900B7EC2F /* MultipleLights.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = MultipleLights.h; sourceTree = "<group>"; };
 		2F917EC21F36F59F00B7EC2F /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = lib/libassimp/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
+		2FA3529C1F6C16E3006527C7 /* NormalMapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalMapping.cpp; sourceTree = "<group>"; };
+		2FA3529D1F6C16E3006527C7 /* NormalMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalMapping.h; sourceTree = "<group>"; };
+		2FA3529E1F6C16E3006527C7 /* ParallaxMapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParallaxMapping.cpp; sourceTree = "<group>"; };
+		2FA3529F1F6C16E3006527C7 /* ParallaxMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxMapping.h; sourceTree = "<group>"; };
 		2FBB74631F6821AB00BD1217 /* PointShadows.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointShadows.cpp; sourceTree = "<group>"; };
 		2FBB74641F6821AB00BD1217 /* PointShadows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointShadows.h; sourceTree = "<group>"; };
 		2FDE13CA1F4832080043ACA3 /* AdvancedGLSL.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedGLSL.cpp; sourceTree = "<group>"; };
@@ -763,6 +769,10 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2FA3529C1F6C16E3006527C7 /* NormalMapping.cpp */,
+				2FA3529D1F6C16E3006527C7 /* NormalMapping.h */,
+				2FA3529E1F6C16E3006527C7 /* ParallaxMapping.cpp */,
+				2FA3529F1F6C16E3006527C7 /* ParallaxMapping.h */,
 				2FBB74631F6821AB00BD1217 /* PointShadows.cpp */,
 				2FBB74641F6821AB00BD1217 /* PointShadows.h */,
 				2F7560A21F5C3DB60073D047 /* ShadowMapping.cpp */,
@@ -897,6 +907,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3E97111F3C8E95000DAB5F /* Blending.cpp in Sources */,
+				2FA352A11F6C16E3006527C7 /* ParallaxMapping.cpp in Sources */,
 				2F092FF11F39ECCB004B8A5E /* DepthTesting.cpp in Sources */,
 				2FE0460F1F2777AC0067E589 /* SimpleCamera.cpp in Sources */,
 				2F4A426F1F3F070B002166C7 /* FaceCulling.cpp in Sources */,
@@ -914,6 +925,7 @@
 				2FE7E6CA1F2376C50033C7B6 /* HelloTriangle.cpp in Sources */,
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F78CB901F5AF1590055FD1A /* AdvancedLighting.cpp in Sources */,
+				2FA352A01F6C16E3006527C7 /* NormalMapping.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
 				2F7560A41F5C3DB60073D047 /* ShadowMapping.cpp in Sources */,
 				2FBB74651F6821AB00BD1217 /* PointShadows.cpp in Sources */,
