@@ -28,7 +28,7 @@
 #include "PracticeCode/PointShadows.h"
 #include "PracticeCode/NormalMapping.h"
 #include "PracticeCode/ParallaxMapping.h"
-
+#include "PracticeCode/HighDynamicRange.h"
 
 
 int main()  
@@ -435,7 +435,17 @@ int main()
 			// йс╡НлЫм╪ йс╡Нуз╠нсЁиД
 			parallaxMappingOcclusion(window);
 			break;
+        case 96:
+            // йс╡НлЫм╪ йс╡Нуз╠нсЁиД
+            HDRWithHighExposure(window);
+            break;
+        case 97:
+            // йс╡НлЫм╪ йс╡Нуз╠нсЁиД
+            HDRWithLowExposure(window);
+            break;
 
+
+                
 
 
 
