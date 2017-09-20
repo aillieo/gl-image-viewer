@@ -28,6 +28,8 @@ void main()
     
     //parallax
     vec2 texCoords = ParallaxMapping(fs_in.TexCoords,  viewDir);
+    if(texCoords.x > 1.0 || texCoords.y > 1.0 || texCoords.x < 0.0 || texCoords.y < 0.0)
+        discard;
         
     // Obtain normal from normal map
     vec3 normal = texture(normalMap, texCoords).rgb;

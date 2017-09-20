@@ -201,7 +201,6 @@ int parallaxMappingSteep(GLFWwindow* window)
 		shader->setVec3("viewPos", camera->Position);
 		shader->setVec3("lightPos", lightPos);
 		shader->setFloat("height_scale", 0.1f);
-
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, diffuseMap);
 		glActiveTexture(GL_TEXTURE1);
@@ -248,6 +247,113 @@ int parallaxMappingSteep(GLFWwindow* window)
 // 视差贴图 视差遮蔽映射
 int parallaxMappingOcclusion(GLFWwindow* window)
 {
+	glEnable(GL_DEPTH_TEST);
+
+	int win_width,win_height;
+	glfwGetWindowSize(window,&win_width,&win_height);
+
+	Shader* shader = new Shader("ParallaxMapping/shader3.vsh","ParallaxMapping/shader3.fsh");
+
+	GLuint VAO, VBO;
+	_PM_genVBOVAO(&VBO, &VAO);
+
+
+	unsigned int diffuseMap = TextureLoader::loadTexture("parallax/bricks/diffuse.jpg");
+	unsigned int normalMap = TextureLoader::loadTexture("parallax/bricks/normal.jpg");
+	unsigned int parallaxMap = TextureLoader::loadTexture("parallax/bricks/normal.jpg");
+/*
+	unsigned int diffuseMap = TextureLoader::loadTexture("parallax/toy_box/diffuse.png");
+	unsigned int normalMap = TextureLoader::loadTexture("parallax/toy_box/normal.png");
+	unsigned int parallaxMap = TextureLoader::loadTexture("parallax/toy_box/normal.png");
+*/
+
+	// Light source
+	glm::vec3 lightPos(0.5f, 1.0f, 0.3f);
+
+	// Camera
+	Camera* camera = new Camera(glm::vec3(0.0f, 0.0f, 3.0f));
+	float deltaTime = 0.0f;
+	float lastFrame = 0.0f;
+	bindCameraToWindow(window, camera);
+
+
+	// =================================================
+
+
+	shader->use();
+	shader->setInt("diffuseMap", 0);
+	shader->setInt("normalMap", 1);
+	shader->setInt("depthMap", 2);
+
+
+	while(!glfwWindowShouldClose(window) && !SceneManager::willChangeScene)
+	{
+		float currentFrame = glfwGetTime();
+		deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
+
+
+		// 输入
+		processInput(window);
+		processInput(window, camera, deltaTime);
+
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
+
+		glm::mat4 projection = glm::perspective(camera->Zoom, (float)win_width / (float)win_height, 0.1f, 100.0f);
+		glm::mat4 view = camera->GetViewMatrix();
+		shader->use();
+		shader->setMat4("projection", projection);
+		shader->setMat4("view", view);
+		// render normal-mapped quad
+		glm::mat4 model;
+		model = glm::rotate(model, glm::radians((float)glfwGetTime() * -10.0f), glm::normalize(glm::vec3(1.0, 0.0, 1.0))); // rotate the quad to show normal mapping from multiple directions
+		shader->setMat4("model", model);
+		shader->setVec3("viewPos", camera->Position);
+		shader->setVec3("lightPos", lightPos);
+		shader->setFloat("height_scale", 0.1f);
+
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, diffuseMap);
+		glActiveTexture(GL_TEXTURE1);
+		glBindTexture(GL_TEXTURE_2D, normalMap);
+		glActiveTexture(GL_TEXTURE2);
+		glBindTexture(GL_TEXTURE_2D, parallaxMap);
+		glBindVertexArray(VAO);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
+
+
+		// render light source (simply re-renders a smaller plane at the light's position for debugging/visualization)
+		model = glm::mat4();
+		model = glm::translate(model, lightPos);
+		model = glm::scale(model, glm::vec3(0.1f));
+		shader->setMat4("model", model);
+		//glDrawArrays(GL_TRIANGLES, 0, 6);
+
+
+		glBindVertexArray(0);
+
+
+
+		// 检查并调用事件，交换缓冲
+		glfwPollEvents();
+		glfwSwapBuffers(window);
+	}
+
+
+
+
+	glDeleteVertexArrays(1, &VAO);
+	glDeleteBuffers(1, &VBO);
+
+
+	unbindCamera(window);
+
+	delete shader;
+	delete camera;
+
 
 	return 0;
 }
