@@ -41,7 +41,7 @@ int main()
 	}
 
 	//
-	SceneManager::sceneIndexMax = 96;
+	SceneManager::sceneIndexMax = 99;
 	SceneManager::index = SceneManager::sceneIndexMax;
 
 	while (!glfwWindowShouldClose(window))
@@ -436,16 +436,22 @@ int main()
 			parallaxMappingOcclusion(window);
 			break;
         case 96:
-            // 视差贴图 视差遮蔽映射
-            HDRWithHighExposure(window);
-            break;
-        case 97:
-            // 视差贴图 视差遮蔽映射
-            HDRWithLowExposure(window);
-            break;
+			// 不使用HDR
+			lightWithoutHDR(window);
+			break;
+		case 97:
+			// HDR reinhard算法
+			HDRWithReinhard(window);
+			break;
+		case 98:
+			// HDR 高曝光
+			HDRWithHighExposure(window);
+			break;
+		case 99:
+			// HDR 低曝光
+			HDRWithLowExposure(window);
+			break;
 
-
-                
 
 
 

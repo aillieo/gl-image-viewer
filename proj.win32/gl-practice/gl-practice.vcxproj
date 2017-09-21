@@ -24,6 +24,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\FaceCulling.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\FrameBuffers.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\HelloTriangle.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\HighDynamicRange.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\Instancing.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightCasters.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\LightingMaps.cpp" />
@@ -208,6 +209,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\FaceCulling.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\FrameBuffers.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\HelloTriangle.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\HighDynamicRange.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\Instancing.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightCasters.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\LightingMaps.h" />
