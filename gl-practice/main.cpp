@@ -29,6 +29,7 @@
 #include "PracticeCode/NormalMapping.h"
 #include "PracticeCode/ParallaxMapping.h"
 #include "PracticeCode/HighDynamicRange.h"
+#include "PracticeCode/Bloom.h"
 
 
 int main()  
@@ -451,12 +452,15 @@ int main()
 			// HDR 低曝光
 			HDRWithLowExposure(window);
 			break;
+		case 100:
+			// 提取高亮度区域
+			extractingBrightColor(window);
+			break;
+		case 101:
+			// Bloom泛光
+			showBloom(window);
+			break;
 
-
-
-
-
-            
 
 
 		default:
