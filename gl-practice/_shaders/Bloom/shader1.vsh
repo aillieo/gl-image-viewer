@@ -18,8 +18,7 @@ void main()
     vs_out.FragPos = vec3(model * vec4(aPos, 1.0));   
     vs_out.TexCoords = aTexCoords;
     
-    // view inside of the cube so flip normals
-    vec3 n = -aNormal;
+    vec3 n = aNormal;
     
     mat3 normalMatrix = transpose(inverse(mat3(model)));
     vs_out.Normal = normalize(normalMatrix * n);
