@@ -141,6 +141,9 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\Bloom.cpp">
       <Filter>Source Files\PracticeCode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gl-practice\PracticeCode\DeferredShading.cpp">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gl-practice\Utils\Shader.h">
@@ -693,6 +696,9 @@
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gl-practice\PracticeCode\Bloom.h">
+      <Filter>Source Files\PracticeCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gl-practice\PracticeCode\DeferredShading.h">
       <Filter>Source Files\PracticeCode</Filter>
     </ClInclude>
   </ItemGroup>

@@ -30,6 +30,7 @@
 #include "PracticeCode/ParallaxMapping.h"
 #include "PracticeCode/HighDynamicRange.h"
 #include "PracticeCode/Bloom.h"
+#include "PracticeCode/DeferredShading.h"
 
 
 int main()  
@@ -460,6 +461,15 @@ int main()
 			// Bloom泛光
 			showBloom(window);
 			break;
+		case 102:
+			// 展示 G-buffer
+			showGBuffer(window);
+			break;
+		case 103:
+			// 使用延迟着色
+			useDeferredShading(window);
+			break;
+
 
 
 
