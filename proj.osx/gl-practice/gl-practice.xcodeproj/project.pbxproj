@@ -23,6 +23,8 @@
 		2F6F2A8D1F1BAEA300BFF395 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */; };
 		2F6F2A921F1BB33E00BFF395 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */; };
 		2F6F2A931F1BB35000BFF395 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */; };
+		2F73AEEA1F7FE8D100BEA0AC /* Bloom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F73AEE61F7FE8D100BEA0AC /* Bloom.cpp */; };
+		2F73AEEB1F7FE8D100BEA0AC /* DeferredShading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F73AEE81F7FE8D100BEA0AC /* DeferredShading.cpp */; };
 		2F74096C1F44875600CA0FFB /* CubeMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F74096A1F44875600CA0FFB /* CubeMaps.cpp */; };
 		2F7560A41F5C3DB60073D047 /* ShadowMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7560A21F5C3DB60073D047 /* ShadowMapping.cpp */; };
 		2F77209B1F389C92007A480F /* LoadModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7720991F389C92007A480F /* LoadModel.cpp */; };
@@ -356,6 +358,10 @@
 		2F6F2A8C1F1BAEA300BFF395 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2F6F2A8E1F1BAFD000BFF395 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = lib/libglfw/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		2F6F2A901F1BAFDD00BFF395 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/libGLEW/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		2F73AEE61F7FE8D100BEA0AC /* Bloom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bloom.cpp; sourceTree = "<group>"; };
+		2F73AEE71F7FE8D100BEA0AC /* Bloom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bloom.h; sourceTree = "<group>"; };
+		2F73AEE81F7FE8D100BEA0AC /* DeferredShading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeferredShading.cpp; sourceTree = "<group>"; };
+		2F73AEE91F7FE8D100BEA0AC /* DeferredShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeferredShading.h; sourceTree = "<group>"; };
 		2F74096A1F44875600CA0FFB /* CubeMaps.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = CubeMaps.cpp; sourceTree = "<group>"; };
 		2F74096B1F44875600CA0FFB /* CubeMaps.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = CubeMaps.h; sourceTree = "<group>"; };
 		2F7560A21F5C3DB60073D047 /* ShadowMapping.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowMapping.cpp; sourceTree = "<group>"; };
@@ -772,6 +778,10 @@
 		2F6F2A831F1BABBD00BFF395 /* PracticeCode */ = {
 			isa = PBXGroup;
 			children = (
+				2F73AEE61F7FE8D100BEA0AC /* Bloom.cpp */,
+				2F73AEE71F7FE8D100BEA0AC /* Bloom.h */,
+				2F73AEE81F7FE8D100BEA0AC /* DeferredShading.cpp */,
+				2F73AEE91F7FE8D100BEA0AC /* DeferredShading.h */,
 				2FC242C91F72A82800106765 /* HighDynamicRange.cpp */,
 				2FC242CA1F72A82800106765 /* HighDynamicRange.h */,
 				2FA3529C1F6C16E3006527C7 /* NormalMapping.cpp */,
@@ -922,6 +932,7 @@
 				2FE7E6CB1F2376C50033C7B6 /* SimpleTexture.cpp in Sources */,
 				2F77209B1F389C92007A480F /* LoadModel.cpp in Sources */,
 				2FC242CB1F72A82800106765 /* HighDynamicRange.cpp in Sources */,
+				2F73AEEB1F7FE8D100BEA0AC /* DeferredShading.cpp in Sources */,
 				2FE8A3D11F49D5A70084056C /* UseGeometryShader.cpp in Sources */,
 				2FE046091F2777A20067E589 /* Camera.cpp in Sources */,
 				2F917EAC1F335E5900B7EC2F /* MultipleLights.cpp in Sources */,
@@ -932,6 +943,7 @@
 				2F6F2A8B1F1BABBD00BFF395 /* Shader.cpp in Sources */,
 				2F78CB901F5AF1590055FD1A /* AdvancedLighting.cpp in Sources */,
 				2FA352A01F6C16E3006527C7 /* NormalMapping.cpp in Sources */,
+				2F73AEEA1F7FE8D100BEA0AC /* Bloom.cpp in Sources */,
 				2F2D9B1C1F1E5548009DD000 /* SimpleShader.cpp in Sources */,
 				2F7560A41F5C3DB60073D047 /* ShadowMapping.cpp in Sources */,
 				2FBB74651F6821AB00BD1217 /* PointShadows.cpp in Sources */,
