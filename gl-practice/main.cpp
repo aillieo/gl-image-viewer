@@ -31,6 +31,7 @@
 #include "PracticeCode/HighDynamicRange.h"
 #include "PracticeCode/Bloom.h"
 #include "PracticeCode/DeferredShading.h"
+#include "PracticeCode/SSAO.h"
 
 
 int main()  
@@ -469,6 +470,19 @@ int main()
 			// 使用延迟着色
 			useDeferredShading(window);
 			break;
+		case 104:
+			// SSAO着色器
+			SSAOShader(window);
+			break;
+		case 105:
+			// SSAO模糊
+			SSAOBlur(window);
+			break;
+		case 106:
+			// SSAO 增加了一个光源
+			SSAOAndLight(window);
+			break;
+
 
 
 

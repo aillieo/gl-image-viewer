@@ -41,6 +41,7 @@
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTexture.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.cpp" />
+    <ClCompile Include="..\..\gl-practice\PracticeCode\SSAO.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\StencilTesting.cpp" />
     <ClCompile Include="..\..\gl-practice\PracticeCode\UseGeometryShader.cpp" />
     <ClCompile Include="..\..\gl-practice\SceneManager.cpp" />
@@ -228,6 +229,7 @@
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTexture.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\SimpleTransform3D.h" />
+    <ClInclude Include="..\..\gl-practice\PracticeCode\SSAO.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\StencilTesting.h" />
     <ClInclude Include="..\..\gl-practice\PracticeCode\UseGeometryShader.h" />
     <ClInclude Include="..\..\gl-practice\SceneManager.h" />
